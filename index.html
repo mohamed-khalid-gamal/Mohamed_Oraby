@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Oraby - Junior Full-stack Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body class="dark-theme">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Mohamed Oraby</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#leadership" class="nav-link">Leadership</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="text-gradient">Mohamed Oraby</span>
+                    </h1>
+                    <p class="hero-subtitle">Junior Full-stack Developer & Computer Science Student</p>
+                    <p class="hero-description">
+                        Passionate Computer Science undergraduate at Ain Shams University (Class of 2026, GPA: 3.7/4.0) with proven expertise in full-stack development. Currently interning as a .NET Engineer at Ejada Company.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#projects" class="btn btn-secondary">View Projects</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="tel:+201208473203" class="social-link" aria-label="Phone">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M6.62,10.79C8.06,13.62 10.38,15.93 13.21,17.38L15.41,15.18C15.69,14.9 16.03,14.8 16.34,14.89C18.23,15.45 20.01,15.02 21.34,13.71C22.37,12.7 22.85,11.33 22.73,10.05C22.53,8.09 21.45,6.39 19.77,5.1C18.77,4.35 17.62,3.84 16.42,3.57L14.22,5.77C14.13,6.08 14.23,6.42 14.51,6.7C17.38,9.57 17.38,14.24 14.51,17.11L12,14.6C12,14.6 15.54,11.05 15.5,11.02C15.15,10.67 14.66,10.53 14.23,10.7C13.51,10.99 12.91,11.57 12.59,12.28L10.71,14.17C9.41,11.47 7.04,9.1 4.34,7.8L6.23,5.92C6.94,5.6 7.52,5 8.01,4.29C9.32,2.61 11.02,1.53 13.07,1.33C14.35,1.21 15.72,1.69 16.73,2.72C18.04,4.05 18.51,5.83 18.07,7.72C17.98,8.03 18.08,8.37 18.36,8.65L20.56,10.85C20.65,10.94 20.75,11.02 20.84,11.1C19.55,11.45 18.37,12.03 17.34,12.81L14.33,9.8C14.6,9.52 14.7,9.17 14.61,8.86C14.33,8.02 13.75,7.29 13,6.79L10.21,9.58C10.71,10.3 11.44,10.88 12.28,11.16C12.56,11.25 12.9,11.15 13.18,10.87L16.19,13.88C15.41,14.91 14.39,15.7 13.15,16.05C13.07,16.07 13,16.08 12.92,16.08C11.95,16.08 10.98,15.67 10.26,14.95L7.25,11.94C6.97,11.66 6.52,11.56 6.24,11.75C5.2,12.43 4.3,13.33 3.59,14.37C2.38,16.06 1.84,18.1 2.1,20.18C2.28,21.61 2.88,22.94 3.82,24C4.86,25.15 6.2,25.76 7.59,25.76C8.69,25.76 9.77,25.42 10.67,24.81C11.76,24.07 12.66,23.07 13.29,21.9C13.57,21.38 13.47,20.74 13.03,20.3L10.79,18.06C10.68,17.95 10.54,17.88 10.4,17.85C9.41,17.65 8.47,17.16 7.69,16.43L10.79,13.33C11.07,13.61 11.43,13.71 11.74,13.62C13.39,13.1 14.9,12.23 16.15,11.07L18.35,13.27C18.63,13.55 19.08,13.66 19.49,13.56C20.83,13.24 22.05,12.5 23,11.41C24.05,10.21 24.64,8.69 24.64,7.14C24.64,5.59 24.05,4.07 23,2.87C21.91,1.68 20.4,0.89 18.77,0.7C17.74,0.59 16.72,0.76 15.77,1.2C14.6,1.74 13.53,2.5 12.61,3.42L10.41,1.22C10.13,0.94 9.78,0.84 9.47,0.93C6.64,1.8 4.33,4.12 2.88,6.95L6.62,10.79Z" />
+                            </svg>
+                        </a>
+                        <a href="mailto:mohamed.khalid.gamal@gmail.com" class="social-link" aria-label="Email">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.89 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/in/mohamed-khalid-gamal" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/mohamed-khalid-gamal" class="social-link" aria-label="GitHub" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-avatar">
+                        <img class="avatar-img" src="public/mo Oraby (1).png" alt="Profile photo of Mohamed Oraby" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Junior Full-stack Developer & Computer Science Student</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate Computer Science undergraduate at Ain Shams University (Class of 2026, GPA: 3.7/4.0) with proven expertise in full-stack development. Currently interning as a .NET Engineer at Ejada Company. Recently achieved 10th place in the AIC2 Competition (68% accuracy) and 2nd place in ASU's Machine Learning Competition, showcasing strong AI/ML skills and effective team leadership.
+                    </p>
+                    <p>
+                        My experience spans backend development, database design, and modern web technologies. I'm constantly learning new technologies and best practices to stay current in this rapidly evolving field.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>2026</h3>
+                            <p>Expected Graduation</p>
+                        </div>
+                        <div class="stat">
+                            <h3>3.7/4.0</h3>
+                            <p>GPA at Ain Shams University</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Major Projects Completed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">Academic background and professional development</p>
+            </div>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
+                        </svg>
+                    </div>
+                    <div class="education-content">
+                        <h3>Bachelor of Science in Computer and Information Sciences</h3>
+                        <h4>Ain Shams University, Cairo, Egypt</h4>
+                        <span class="education-date">Expected June 2026</span>
+                        <p>GPA: 3.7/4.0 | Key Coursework: Database Design, Operating Systems, Data Structures & Algorithms, Object-Oriented Programming, Machine Learning, Software Engineering, Computer Networks, Linear Algebra, Probability, Computer Vision, Computer Graphics</p>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                        </svg>
+                    </div>
+                    <div class="education-content">
+                        <h3>Machine Learning Certification</h3>
+                        <h4>Coursera</h4>
+                        <span class="education-date">2025</span>
+                        <p>Completed comprehensive machine learning course covering algorithms and practical applications.</p>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                        </svg>
+                    </div>
+                    <div class="education-content">
+                        <h3>Full-Stack Web Development</h3>
+                        <h4>Online Bootcamp</h4>
+                        <span class="education-date">2024</span>
+                        <p>Intensive bootcamp covering modern web development technologies and best practices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-subtitle">My internships and teaching roles</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>.NET Engineer Intern</h3>
+                        <h4>Ejada Company, Cairo, Egypt</h4>
+                        <span class="timeline-date">July 2025 - September 2025</span>
+                        <p>
+                            Working on Back-End Real Projects with ASP.NET with a strong team at Ejada Company. Learning advanced concepts including Microservices, SignalR, and Agile methodologies. Working with GitHub and database design principles.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">ASP.NET Core</span>
+                            <span class="skill-tag">Microservices</span>
+                            <span class="skill-tag">SignalR</span>
+                            <span class="skill-tag">Agile</span>
+                            <span class="skill-tag">Entity Framework</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>DEMI Coding Instructor</h3>
+                        <h4>iSchool, Cairo, Egypt</h4>
+                        <span class="timeline-date">Oct 2024 - Present</span>
+                        <p>
+                            Teaching Python and introductory machine learning concepts to 25+ sixth-grade students. Utilizing Scratch, mBlock, and Pictoblocks to simplify AI principles for beginners.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag">Teaching</span>
+                            <span class="skill-tag">Scratch</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Key Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Key Achievements</h2>
+                <p class="section-subtitle">Competitions and recognitions</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>10th Place - AIC2 Competition</h3>
+                        <h4>AI/ML Developer</h4>
+                        <span class="timeline-date">2025</span>
+                        <p>
+                            Achieved 68% accuracy in advanced AI/ML competition using cutting-edge machine learning models. Implemented ensemble methods and deep learning approaches with robust data preprocessing pipeline.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">TensorFlow/PyTorch</span>
+                            <span class="skill-tag">Pandas</span>
+                        </div>
+                        <a href="https://github.com/mohamed-khalid-gamal/AIC2_AinEl3aql" class="project-link" target="_blank" rel="noopener">
+                            View Project on GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>2nd Place - ASU Machine Learning Competition</h3>
+                        <h4>Team Lead</h4>
+                        <span class="timeline-date">2025</span>
+                        <p>
+                            Led team of 6 developers building end-to-end Airbnb guest satisfaction prediction system. Implemented 15+ ML algorithms with Polynomial Regression achieving R²= 0.4841. Built production-ready ML pipeline handling 50K+ data points with SMOTE balancing techniques.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">XGBoost</span>
+                            <span class="skill-tag">NLTK</span>
+                        </div>
+                        <a href="https://github.com/mohamed-khalid-gamal/ML_Guest_Satisfaction" class="project-link" target="_blank" rel="noopener">
+                            View Project on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Backend Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">C# / .NET</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress w-90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">ASP.NET Core</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress w-88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress w-85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress w-70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">RESTful Web API</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress w-87"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Entity Framework Core</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress w-85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Frontend Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript (ES6+)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress w-85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress w-80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">TypeScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress w-75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">HTML5/CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress w-90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Bootstrap</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress w-85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">jQuery</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress w-80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Database & Data Science</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">SQL Server</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress w-85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress w-80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Pandas/NumPy</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress w-85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Scikit-learn</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress w-82"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">XGBoost</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress w-80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">NLP</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress w-75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & DevOps</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Git/GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress w-90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Visual Studio</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress w-85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Postman</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress w-85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Swagger</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress w-80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Agile Methodology</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress w-85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">VS Code</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress w-85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <!-- Projects Section -->
+<section id="projects" class="projects">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">My professional and academic work</p>
+        </div>
+        <div class="projects-grid">
+            <!-- Freelance Job Board - Most Important Project -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Freelance Job Board">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/mohamed-khalid-gamal/HR-System-API" class="project-link" title="View source on GitHub" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="http://systemapiapp.runasp.net/swagger/index.html" class="project-link" title="Open Swagger documentation" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Freelance Job Board Platform</h3>
+                    <p class="project-highlight">Lead Developer | Production-Ready Freelance Marketplace</p>
+                    <p>Designed and led development of a production-ready freelance marketplace with full collaboration lifecycle: job postings, proposals, contract change requests with versioning, reviews, and real-time notifications.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">.NET 8</span>
+                        <span class="tech-tag">ASP.NET Core</span>
+                        <span class="tech-tag">CQRS+MediatR</span>
+                        <span class="tech-tag">SignalR</span>
+                        <span class="tech-tag">SQL Server</span>
+                        <span class="tech-tag">Cloudinary</span>
+                    </div>
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Implemented CQRS+MediatR, Unit of Work, and clean architecture</li>
+                            <li>Middleware-based exception handling & structured logging with Serilog</li>
+                            <li>Integrated Cloudinary for secure file uploads</li>
+                            <li>JWT+Cookie authentication for multi-role access</li>
+                            <li>SignalR hubs for real-time notifications and user presence</li>
+                            <li>Production-quality testing using xUnit, Moq, and FluentAssertions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Airbnb Guest Satisfaction Predictor -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.pexels.com/photos/669996/pexels-photo-669996.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Guest Satisfaction ML">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/mohamed-khalid-gamal/ML_Guest_Satisfaction" class="project-link" title="View source on GitHub" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Airbnb Guest Satisfaction Predictor</h3>
+                    <p class="project-highlight">Team Lead | 2nd Place - ASU Machine Learning Competition</p>
+                    <p>Built dual prediction system processing 50K+ Airbnb listings with advanced NLP sentiment analysis. Created interactive dashboard with Streamlit for real-time predictions.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">XGBoost</span>
+                        <span class="tech-tag">NLTK</span>
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">Polynomial Regression (R²=0.4841)</span>
+                    </div>
+                    <div class="project-features">
+                        <h4>Key Achievements:</h4>
+                        <ul>
+                            <li>Implemented 15+ ML algorithms with Polynomial Regression achieving R²=0.4841</li>
+                            <li>Built production-ready ML pipeline handling 50K+ data points</li>
+                            <li>Applied SMOTE balancing techniques for improved model performance</li>
+                            <li>Developed NLP sentiment analysis for guest reviews</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- AIC2 AinEl3aql Project -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=800" alt="AinEl3aql Project">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/mohamed-khalid-gamal/AIC2_AinEl3aql" class="project-link" title="View source on GitHub" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>AIC2 AinEl3aql AI Platform</h3>
+                    <p class="project-highlight">AI/ML Developer | 10th Place - AIC2 Competition</p>
+                    <p>Advanced AI platform achieving 68% accuracy using ensemble methods and deep learning approaches with robust data preprocessing pipeline.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">TensorFlow/PyTorch</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">NumPy</span>
+                        <span class="tech-tag">Ensemble Methods</span>
+                    </div>
+                    <div class="project-features">
+                        <h4>Key Achievements:</h4>
+                        <ul>
+                            <li>Achieved 68% accuracy in advanced AI/ML competition</li>
+                            <li>Implemented ensemble methods and deep learning approaches</li>
+                            <li>Developed robust data preprocessing pipeline</li>
+                            <li>Optimized model performance through feature engineering</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Elmokhtareon Project -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Elmokhtareon">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/mohamed-khalid-gamal/Innovators" class="project-link" title="View source on GitHub" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Elmokhtareon Coding Academy</h3>
+                    <p class="project-highlight">Full-Stack Developer | Freelance Project</p>
+                    <p>Full-stack freelance project for a coding academy with responsive frontend and backend systems.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">jQuery</span>
+                        <span class="tech-tag">ASP.NET MVC</span>
+                        <span class="tech-tag">Entity Framework Core</span>
+                        <span class="tech-tag">RESTful API</span>
+                    </div>
+                    <div class="project-features">
+                        <h4>Technical Implementation:</h4>
+                        <ul>
+                            <li>Implemented responsive frontend with Bootstrap, JavaScript, and jQuery</li>
+                            <li>Developed backend with ASP.NET MVC and Entity Framework Core</li>
+                            <li>Integrated Sweet Alert for user notifications</li>
+                            <li>Used Ajax for seamless data exchange without page reloads</li>
+                            <li>Implemented RESTful Web API for data communication</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Caro E-Commerce Project -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Caro E-Commerce">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/mohamed-khalid-gamal/Caro_ECommerce_Back" class="project-link" title="View source on GitHub" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Caro E-Commerce Platform</h3>
+                    <p class="project-highlight">Backend Developer | Full E-Commerce Implementation</p>
+                    <p>E-Commerce project applying ASP.NET MVC and backend concepts with secure payment integration and product management.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">ASP.NET MVC</span>
+                        <span class="tech-tag">SQL Server</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Bootstrap</span>
+                        <span class="tech-tag">Payment Integration</span>
+                    </div>
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Implemented secure payment integration system</li>
+                            <li>Developed comprehensive product management system</li>
+                            <li>Created user authentication and authorization systems</li>
+                            <li>Designed database schema for e-commerce operations</li>
+                            <li>Implemented responsive UI with Bootstrap framework</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- VoidX NASA Project -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=800" alt="VoidX NASA Project">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/mohamed-khalid-gamal/VoidX_-Nasa_Project-" class="project-link" title="View source on GitHub" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="http://voidx.runasp.net/swagger/index.html" class="project-link" title="Open Swagger documentation" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>VoidX NASA Project</h3>
+                    <p class="project-highlight">Backend Developer | Space Data Visualization</p>
+                    <p>Backend for an app that visualizes the night sky from exoplanets, using NASA's Exoplanet Archive and star catalogs.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">ASP.NET Core</span>
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">RESTful APIs</span>
+                        <span class="tech-tag">NASA API</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">Data Processing</span>
+                    </div>
+                    <div class="project-features">
+                        <h4>Technical Highlights:</h4>
+                        <ul>
+                            <li>Developed APIs for processing large-scale star data</li>
+                            <li>Integrated with NASA's Exoplanet Archive and star catalogs</li>
+                            <li>Created backend services for generating interactive star charts</li>
+                            <li>Implemented data processing pipelines for astronomical data</li>
+                            <li>Designed systems for exporting visualizations as images</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Map Routing Project -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.pexels.com/photos/186461/pexels-photo-186461.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Map Routing">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/mohamed-khalid-gamal/Map" class="project-link" title="View source on GitHub" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Map Routing Application</h3>
+                    <p class="project-highlight">Algorithm Implementation | Graph Theory</p>
+                    <p>Project applying graph theory by implementing super source Dijkstra algorithm to compute the fastest route between two points on a map.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">Graph Theory</span>
+                        <span class="tech-tag">Dijkstra Algorithm</span>
+                        <span class="tech-tag">Visual Studio</span>
+                        <span class="tech-tag">Draw Library</span>
+                    </div>
+                    <div class="project-features">
+                        <h4>Technical Implementation:</h4>
+                        <ul>
+                            <li>Implemented super source Dijkstra algorithm for route calculation</li>
+                            <li>Solved the problem of computing fastest routes combining walking and driving</li>
+                            <li>Developed visualization of routes through intersections</li>
+                            <li>Applied graph theory concepts to real-world navigation problems</li>
+                            <li>Used specialized draw library for visual representation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FOS Operating System Project -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=800" alt="FOS Operating System">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/mohamed-khalid-gamal/FOS-OS" class="project-link" title="View source on GitHub" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>FOS Operating System</h3>
+                    <p class="project-highlight">Course Project | Memory Management & CPU Scheduling</p>
+                    <p>Operating system implementation focusing on memory management and CPU scheduling algorithms.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">C</span>
+                        <span class="tech-tag">Operating Systems</span>
+                        <span class="tech-tag">Memory Management</span>
+                        <span class="tech-tag">CPU Scheduling</span>
+                        <span class="tech-tag">Eclipse</span>
+                        <span class="tech-tag">Visual Studio</span>
+                    </div>
+                    <div class="project-features">
+                        <h4>Key Components:</h4>
+                        <ul>
+                            <li>Implemented memory management algorithms</li>
+                            <li>Developed CPU scheduling algorithms</li>
+                            <li>Designed process control block structures</li>
+                            <li>Implemented process synchronization mechanisms</li>
+                            <li>Created system calls interface for user programs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Leadership Section -->
+    <section id="leadership" class="leadership">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Leadership & Activities</h2>
+                <p class="section-subtitle">Organizational roles and contributions</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Head of Web Development</h3>
+                        <h4>Faculty of Computer Science, Ain Shams University</h4>
+                        <span class="timeline-date">Present</span>
+                        <p>
+                            Leading team of 20 members delivering web development education to 50+ students. Curriculum design for Level 1 (React) and Level 2 (ASP.NET).
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Team Leadership</span>
+                            <span class="skill-tag">Curriculum Design</span>
+                            <span class="skill-tag">Mentoring</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Web Development Workshop Organizer</h3>
+                        <h4>Faculty of Computer Science, Ain Shams University</h4>
+                        <span class="timeline-date">Jun 2024 - Feb 2025</span>
+                        <p>
+                            Designed and led advanced workshops on SASS, ES6, jQuery, and Bootstrap for 50+ students. Managed both online and in-person training materials; recorded and published sessions Playlist.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Workshop Organization</span>
+                            <span class="skill-tag">Technical Training</span>
+                            <span class="skill-tag">Content Creation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>ACM/ASCIS Member</h3>
+                        <h4>Competitive Programming</h4>
+                        <span class="timeline-date">Oct 2024 - Present</span>
+                        <p>
+                            Codeforces Specialist rating with expertise in algorithms, data structures, dynamic programming, and graph theory. Active participant in competitive programming contests.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Algorithms</span>
+                            <span class="skill-tag">Data Structures</span>
+                            <span class="skill-tag">Competitive Programming</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss your next project</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>
+                        I'm always interested in hearing about new opportunities and exciting projects. 
+                        Whether you have a question or just want to say hi, feel free to reach out!
+                    </p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.89 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:mohamed.khalid.gamal@gmail.com">mohamed.khalid.gamal@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M6.62,10.79C8.06,13.62 10.38,15.93 13.21,17.38L15.41,15.18C15.69,14.9 16.03,14.8 16.34,14.89C18.23,15.45 20.01,15.02 21.34,13.71C22.37,12.7 22.85,11.33 22.73,10.05C22.53,8.09 21.45,6.39 19.77,5.1C18.77,4.35 17.62,3.84 16.42,3.57L14.22,5.77C14.13,6.08 14.23,6.42 14.51,6.7C17.38,9.57 17.38,14.24 14.51,17.11L12,14.6C12,14.6 15.54,11.05 15.5,11.02C15.15,10.67 14.66,10.53 14.23,10.7C13.51,10.99 12.91,11.57 12.59,12.28L10.71,14.17C9.41,11.47 7.04,9.1 4.34,7.8L6.23,5.92C6.94,5.6 7.52,5 8.01,4.29C9.32,2.61 11.02,1.53 13.07,1.33C14.35,1.21 15.72,1.69 16.73,2.72C18.04,4.05 18.51,5.83 18.07,7.72C17.98,8.03 18.08,8.37 18.36,8.65L20.56,10.85C20.65,10.94 20.75,11.02 20.84,11.1C19.55,11.45 18.37,12.03 17.34,12.81L14.33,9.8C14.6,9.52 14.7,9.17 14.61,8.86C14.33,8.02 13.75,7.29 13,6.79L10.21,9.58C10.71,10.3 11.44,10.88 12.28,11.16C12.56,11.25 12.9,11.15 13.18,10.87L16.19,13.88C15.41,14.91 14.39,15.7 13.15,16.05C13.07,16.07 13,16.08 12.92,16.08C11.95,16.08 10.98,15.67 10.26,14.95L7.25,11.94C6.97,11.66 6.52,11.56 6.24,11.75C5.2,12.43 4.3,13.33 3.59,14.37C2.38,16.06 1.84,18.1 2.1,20.18C2.28,21.61 2.88,22.94 3.82,24C4.86,25.15 6.2,25.76 7.59,25.76C8.69,25.76 9.77,25.42 10.67,24.81C11.76,24.07 12.66,23.07 13.29,21.9C13.57,21.38 13.47,20.74 13.03,20.3L10.79,18.06C10.68,17.95 10.54,17.88 10.4,17.85C9.41,17.65 8.47,17.16 7.69,16.43L10.79,13.33C11.07,13.61 11.43,13.71 11.74,13.62C13.39,13.1 14.9,12.23 16.15,11.07L18.35,13.27C18.63,13.55 19.08,13.66 19.49,13.56C20.83,13.24 22.05,12.5 23,11.41C24.05,10.21 24.64,8.69 24.64,7.14C24.64,5.59 24.05,4.07 23,2.87C21.91,1.68 20.4,0.89 18.77,0.7C17.74,0.59 16.72,0.76 15.77,1.2C14.6,1.74 13.53,2.5 12.61,3.42L10.41,1.22C10.13,0.94 9.78,0.84 9.47,0.93C6.64,1.8 4.33,4.12 2.88,6.95L6.62,10.79Z" />
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <a href="tel:+201208473203">+201208473203</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>LinkedIn</h4>
+                                <a href="https://linkedin.com/in/mohamed-khalid-gamal" target="_blank" rel="noopener">linkedin.com/in/mohamed-khalid-gamal</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/mohamed-khalid-gamal" target="_blank" rel="noopener">github.com/mohamed-khalid-gamal</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Mohamed Oraby. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="tel:+201208473203" class="social-link" title="Call Mohamed">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6.62,10.79C8.06,13.62 10.38,15.93 13.21,17.38L15.41,15.18C15.69,14.9 16.03,14.8 16.34,14.89C18.23,15.45 20.01,15.02 21.34,13.71C22.37,12.7 22.85,11.33 22.73,10.05C22.53,8.09 21.45,6.39 19.77,5.1C18.77,4.35 17.62,3.84 16.42,3.57L14.22,5.77C14.13,6.08 14.23,6.42 14.51,6.7C17.38,9.57 17.38,14.24 14.51,17.11L12,14.6C12,14.6 15.54,11.05 15.5,11.02C15.15,10.67 14.66,10.53 14.23,10.7C13.51,10.99 12.91,11.57 12.59,12.28L10.71,14.17C9.41,11.47 7.04,9.1 4.34,7.8L6.23,5.92C6.94,5.6 7.52,5 8.01,4.29C9.32,2.61 11.02,1.53 13.07,1.33C14.35,1.21 15.72,1.69 16.73,2.72C18.04,4.05 18.51,5.83 18.07,7.72C17.98,8.03 18.08,8.37 18.36,8.65L20.56,10.85C20.65,10.94 20.75,11.02 20.84,11.1C19.55,11.45 18.37,12.03 17.34,12.81L14.33,9.8C14.6,9.52 14.7,9.17 14.61,8.86C14.33,8.02 13.75,7.29 13,6.79L10.21,9.58C10.71,10.3 11.44,10.88 12.28,11.16C12.56,11.25 12.9,11.15 13.18,10.87L16.19,13.88C15.41,14.91 14.39,15.7 13.15,16.05C13.07,16.07 13,16.08 12.92,16.08C11.95,16.08 10.98,15.67 10.26,14.95L7.25,11.94C6.97,11.66 6.52,11.56 6.24,11.75C5.2,12.43 4.3,13.33 3.59,14.37C2.38,16.06 1.84,18.1 2.1,20.18C2.28,21.61 2.88,22.94 3.82,24C4.86,25.15 6.2,25.76 7.59,25.76C8.69,25.76 9.77,25.42 10.67,24.81C11.76,24.07 12.66,23.07 13.29,21.9C13.57,21.38 13.47,20.74 13.03,20.3L10.79,18.06C10.68,17.95 10.54,17.88 10.4,17.85C9.41,17.65 8.47,17.16 7.69,16.43L10.79,13.33C11.07,13.61 11.43,13.71 11.74,13.62C13.39,13.1 14.9,12.23 16.15,11.07L18.35,13.27C18.63,13.55 19.08,13.66 19.49,13.56C20.83,13.24 22.05,12.5 23,11.41C24.05,10.21 24.64,8.69 24.64,7.14C24.64,5.59 24.05,4.07 23,2.87C21.91,1.68 20.4,0.89 18.77,0.7C17.74,0.59 16.72,0.76 15.77,1.2C14.6,1.74 13.53,2.5 12.61,3.42L10.41,1.22C10.13,0.94 9.78,0.84 9.47,0.93C6.64,1.8 4.33,4.12 2.88,6.95L6.62,10.79Z" />
+                        </svg>
+                    </a>
+                    <a href="mailto:mohamed.khalid.gamal@gmail.com" class="social-link" title="Email Mohamed">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.89 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/in/mohamed-khalid-gamal" class="social-link" title="LinkedIn Profile" rel="noopener" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/mohamed-khalid-gamal" class="social-link" title="GitHub Profile" rel="noopener" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
