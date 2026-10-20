@@ -2,7 +2,7 @@
    MOHAMED ORABY 98  -  SERVICE WORKER (OFFLINE PWA ENGINE)
    ===================================================================== */
 
-const CACHE_NAME = 'oraby98-offline-v1.1';
+const CACHE_NAME = 'oraby98-offline-v1.2';
 
 // Core assets to pre-cache on install for 100% offline capability
 const PRECACHE_ASSETS = [

@@ -1122,11 +1122,12 @@ body.fullscreen-mode #vignette {
   gap: 2px;
   border-bottom: 1px solid var(--sh);
   padding: 0 4px;
+  flex-wrap: wrap;
 }
 
 .tab-btn {
-  font-size: 11.5px;
-  padding: 4px 10px;
+  font-size: 11px;
+  padding: 4px 8px;
   background: var(--silver);
   border: none;
   cursor: pointer;
@@ -1134,6 +1135,7 @@ body.fullscreen-mode #vignette {
   box-shadow: inset -1px 0 var(--sh-dk), inset 1px 1px var(--hi);
   position: relative;
   top: 1px;
+  white-space: nowrap;
 }
 
 .tab-btn.active {

@@ -42,10 +42,10 @@ const ICON = {
    ===================================================================== */
 const PROFILE = {
   name: 'Mohamed Khalid Oraby',
-  title: 'Junior Full-stack Developer & CS Student',
-  sub: 'Ain Shams University (Class of 2026, GPA: 3.7/4.0) • .NET Engineer Intern @ Ejada',
-  bio: `Passionate Computer Science undergraduate at Ain Shams University with proven expertise in full-stack development, modern web architectures, and AI/ML systems. Currently interning as a .NET Engineer at Ejada Company. Achieved 10th place in the national AIC2 Competition and 2nd place in ASU's Machine Learning Competition.`,
-  phone: '+201208473203',
+  title: 'Software & AI Engineer',
+  sub: 'Ain Shams University (GPA: 3.7/4.0) • 3+ Years Exp • Full-Stack (.NET/PHP/React/Angular) & AI (LLM/Vision/NLP)',
+  bio: `Software & AI Engineer with 3+ years of experience delivering scalable full-stack applications and AI-powered products using .NET, Angular, React, PHP, and Python. Contributed to an enterprise SaaS ERP platform serving 1,500+ nonprofit organizations, featuring 900+ pages and 30 integrated management modules. Co-developed JobLens, an A+ AI recruitment platform combining LLMs, RAG, NLP, speech technologies, and computer vision, with models achieving up to 99% mAP50 and 98% precision and recall. Proven problem solver with strong competitive programming and machine learning achievements, plus experience teaching and mentoring 2,000+ learners. Skilled at translating complex requirements into reliable, scalable, and user-focused software solutions.`,
+  phone: '+201211099674',
   email: 'mohamed.khalid.gamal@gmail.com',
   linkedin: 'https://linkedin.com/in/mohamed-khalid-gamal',
   github: 'https://github.com/mohamed-khalid-gamal',
@@ -54,78 +54,119 @@ const PROFILE = {
 
 const PROJECTS = [
   {
-    id: 'freelance-job-board',
-    title: 'Freelance Job Board Platform',
-    badge: 'Production-Ready • Lead Developer',
-    category: 'dotnet',
-    desc: 'Production-ready freelance marketplace with full collaboration lifecycle: job postings, proposals, contract change requests with versioning, reviews, and real-time SignalR notifications.',
-    tech: ['.NET 8', 'ASP.NET Core', 'CQRS + MediatR', 'SignalR', 'SQL Server', 'Cloudinary', 'xUnit/Moq'],
+    id: 'rafed-erp',
+    title: 'Rafed - Enterprise SaaS for Nonprofit Organizations',
+    badge: 'Enterprise SaaS ERP • 1,500+ Nonprofits',
+    category: 'enterprise fullstack',
+    desc: 'Developed and maintained a large-scale SaaS ERP platform serving more than 1,500 nonprofit organizations across Saudi Arabia, enabling complete digital transformation.',
+    tech: ['PHP', 'Full-Stack ERP', 'Relational DB', 'RBAC & Approvals', 'Reporting Engine', 'Modular Architecture'],
     highlights: [
-      'Clean architecture with CQRS, MediatR, and Unit of Work patterns',
-      'Middleware-based exception handling and Serilog structured logging',
-      'Cloudinary media management & JWT + Cookie dual authentication',
-      'Real-time notifications and live presence via SignalR hubs',
-      'Production-grade testing with xUnit, Moq, and FluentAssertions'
+      'Contributed to a comprehensive dashboard containing over 900 pages and 30 integrated management modules',
+      'Supported beneficiary services, donors, finance, HR, governance, strategic planning, and admin operations',
+      'Implemented configurable approval workflows, role-based permissions, reporting, and centralized data management',
+      'Helped deliver a scalable, customizable solution automating non-profit workflows across Saudi Arabia'
+    ]
+  },
+  {
+    id: 'abwab-el-kheir',
+    title: 'Abwab El-Kheir - Charity & Donation Management Platform',
+    badge: 'Charity & Donation Platform • Full-Stack',
+    category: 'dotnet fullstack enterprise',
+    desc: 'Full-stack platform consisting of a public donation website and a comprehensive administration dashboard built with React.js and .NET.',
+    tech: ['React.js', '.NET', 'REST APIs', 'OAuth', 'Payment Gateways', 'CAPTCHA', 'SMTP Notifications', 'SQL Server'],
+    highlights: [
+      'Built modules for managing campaigns, campaign types, donors, transactions, recurring donations, and fundraising targets',
+      'Developed a CMS for managing pages, media, navigation, layouts, branding, sponsors, and website content',
+      'Integrated multiple payment gateways with configurable live/test environments and transaction tracking',
+      'Implemented analytics, OAuth authentication, CAPTCHA protection, SMTP email notifications, and reusable email templates'
+    ]
+  },
+  {
+    id: 'joblens-ai',
+    title: 'JobLens – AI-Powered Recruitment Integrity Platform',
+    badge: 'A+ Graduation Project • Multimodal AI Platform',
+    category: 'ai fullstack',
+    desc: 'Co-developed an end-to-end AI recruitment platform that automates candidate screening, semantic job matching, live AI interviewing, and candidate integrity monitoring.',
+    tech: ['Angular', 'FastAPI', 'Python', 'LLMs', 'RAG', 'SBERT', 'ChromaDB', 'YOLOv8', 'MediaPipe', 'PostgreSQL', 'Docker'],
+    highlights: [
+      'Implemented LLM-powered CV parsing and ATS analysis providing scores, strengths, weaknesses, and actionable suggestions',
+      'Built semantic job-matching engine using SBERT and ChromaDB, supported by 1,700+ scraped job listings',
+      'Developed AI interview pipeline using Mistral LLM, Parakeet STT, and Coqui TTS (95% turn-taking accuracy, 0.0189 WER)',
+      'Integrated YOLOv8, MediaPipe, and browser monitoring for proctoring, achieving 99% mAP50 and 98% precision and recall',
+      'Generated comprehensive recruiter reports combining assessment, interview, and integrity scores to shortlist candidates'
+    ]
+  },
+  {
+    id: 'freelance-job-board',
+    title: 'Freelance Platform (Ejada Intern Graduation Project)',
+    badge: 'Production-Ready Marketplace • Lead Developer',
+    category: 'dotnet enterprise fullstack',
+    desc: 'Designed and led development of a production-ready freelance marketplace with full collaboration lifecycle: job postings, proposals, contract change requests with versioning, reviews, and real-time notifications.',
+    tech: ['.NET 8', 'ASP.NET Core MVC', 'Web API', 'SignalR', 'EF Core', 'Serilog', 'Cloudinary', 'Bootstrap', 'xUnit/Moq'],
+    highlights: [
+      'Implemented CQRS + MediatR, Unit of Work, and clean architecture separating API from MVC (Razor) frontend via typed HttpClient',
+      'Built middleware-based exception handling & structured logging with Serilog for diagnostics and request tracking',
+      'Integrated Cloudinary for file uploads, JWT + Cookie authentication for multi-role access, and SignalR hubs for real-time presence',
+      'Delivered production-quality testing using xUnit, Moq, and FluentAssertions'
     ],
     github: 'https://github.com/mohamed-khalid-gamal/HR-System-API',
     swagger: 'http://systemapiapp.runasp.net/swagger/index.html'
+  },
+  {
+    id: 'elzahy-group',
+    title: 'Elzahy Group - Corporate Website & Platform',
+    badge: 'Enterprise Construction Firm • Full-Stack',
+    category: 'dotnet fullstack enterprise',
+    desc: "Designed and developed the company's full website for a leading construction firm using Angular and ASP.NET Core, implementing dynamic content management, responsive UI, and backend APIs for project showcasing and client inquiries.",
+    tech: ['Angular', 'ASP.NET Core', 'C#', 'RESTful Web API', 'Dynamic CMS', 'Responsive UI', 'SQL Server'],
+    highlights: [
+      'Architected full-stack enterprise web application for leading construction firm',
+      'Built dynamic CMS for portfolio showcases, service catalogs, and client inquiry workflows',
+      'Engineered high-performance RESTful APIs with ASP.NET Core',
+      'Delivered pixel-perfect responsive user interface using Angular'
+    ]
   },
   {
     id: 'airbnb-ml',
     title: 'Airbnb Guest Satisfaction Predictor',
     badge: '2nd Place ASU ML Competition • Team Lead',
     category: 'ai',
-    desc: 'Dual ML prediction system processing 50K+ Airbnb listings with advanced NLP sentiment analysis. Features an interactive dashboard built with Streamlit for real-time guest scoring.',
-    tech: ['Python', 'Scikit-learn', 'XGBoost', 'NLTK', 'Streamlit', 'Polynomial Reg (R²=0.4841)'],
+    desc: 'Dual prediction ML system processing 50K+ Airbnb listings with advanced NLP sentiment analysis and an interactive dashboard built with Streamlit for real-time predictions.',
+    tech: ['Python', 'Scikit-learn', 'XGBoost', 'NLTK', 'Streamlit', 'Polynomial Reg (R²=0.4841)', 'KMeans', 'SMOTE'],
     highlights: [
-      'Led team of 6 developers building end-to-end ML prediction pipeline',
-      'Evaluated 15+ ML models; achieved R²= 0.4841 with Polynomial Regression',
-      'Applied SMOTE class-balancing and comprehensive feature engineering',
-      'Engineered NLP sentiment analysis on thousands of guest reviews'
+      'Secured 2nd Place in ASU Machine Learning Competition as Team Lead',
+      'Built dual regression and classification system evaluating 15 machine learning algorithms',
+      'Applied advanced feature engineering, KMeans clustering, VADER and TF-IDF text analysis, and SMOTE balancing',
+      'Created interactive Streamlit dashboard for real-time guest score predictions'
     ],
     github: 'https://github.com/mohamed-khalid-gamal/ML_Guest_Satisfaction'
-  },
-  {
-    id: 'aic2-ainel3aql',
-    title: 'AIC2 AinEl3aql AI Platform',
-    badge: '10th Place - AIC2 Competition',
-    category: 'ai',
-    desc: 'Advanced machine learning platform achieving 68% accuracy in a high-stakes AI challenge using deep learning and ensemble algorithms with a robust data preprocessing pipeline.',
-    tech: ['Python', 'Scikit-learn', 'TensorFlow / PyTorch', 'Pandas', 'NumPy', 'Ensemble Methods'],
-    highlights: [
-      'Ranked 10th nationally with 68% validation accuracy',
-      'Engineered ensemble classifiers combining tree-based and neural models',
-      'Built automated data cleaning and outlier detection pipeline',
-      'Optimized hyperparameters using Bayesian optimization techniques'
-    ],
-    github: 'https://github.com/mohamed-khalid-gamal/AIC2_AinEl3aql'
   },
   {
     id: 'elmokhtareon',
     title: 'Elmokhtareon Coding Academy',
     badge: 'Freelance Project • Full-Stack',
-    category: 'dotnet',
-    desc: 'Full-stack commercial web application built for a coding academy, featuring responsive student portal, course enrollment, and administrative dashboard.',
-    tech: ['ASP.NET MVC', 'Entity Framework Core', 'Bootstrap', 'JavaScript', 'jQuery', 'RESTful API'],
+    category: 'dotnet fullstack',
+    desc: 'Full-stack freelance web platform built for a coding academy, featuring responsive student portal, course enrollment, and administrative dashboard.',
+    tech: ['ASP.NET MVC', 'Entity Framework Core', 'LINQ', 'Bootstrap', 'JavaScript', 'jQuery', 'SweetAlert', 'Ajax', 'Swagger'],
     highlights: [
-      'Developed backend MVC architecture with Entity Framework Core',
+      'Developed backend MVC architecture with Entity Framework Core and LINQ',
       'Integrated SweetAlert and Ajax for dynamic async operations without page refreshes',
-      'Created RESTful Web API endpoints for frontend data communication',
+      'Created RESTful Web API endpoints for frontend data communication with Swagger documentation',
       'Engineered secure role-based access for students, teachers, and admins'
     ],
     github: 'https://github.com/mohamed-khalid-gamal/Innovators'
   },
   {
     id: 'caro-ecommerce',
-    title: 'Caro E-Commerce Platform',
-    badge: 'Full E-Commerce Backend',
+    title: 'Caro - MVC E-Commerce Platform',
+    badge: 'E-Commerce Architecture • Full Backend',
     category: 'dotnet',
-    desc: 'Comprehensive e-commerce platform applying ASP.NET MVC architecture with secure checkout, payment gateway integration, catalog browsing, and inventory management.',
-    tech: ['C#', 'ASP.NET MVC', 'SQL Server', 'JavaScript', 'Payment Gateway Integration'],
+    desc: 'Comprehensive e-commerce platform applying ASP.NET MVC architecture and backend concepts with catalog management, secure checkout, and role authorization.',
+    tech: ['C#', 'ASP.NET MVC', 'SQL Server', 'MySQL', 'JavaScript', 'CSS', 'Bootstrap', 'LINQ', 'EF Core', 'ASP Identity'],
     highlights: [
-      'Implemented secure multi-step payment gateway processing',
-      'Engineered database schema and optimized SQL relational queries',
-      'Built product catalog with category filtering, cart, and order tracking',
+      'Implemented secure multi-step payment gateway processing and ASP Identity authentication',
+      'Engineered relational database schemas across SQL Server and MySQL with optimized queries',
+      'Built product catalog with category filtering, shopping cart, and order tracking',
       'Configured role authorization for merchants and shoppers'
     ],
     github: 'https://github.com/mohamed-khalid-gamal/Caro_ECommerce_Back'
@@ -180,51 +221,90 @@ const PROJECTS = [
 
 const EXPERIENCES = [
   {
+    year: '2025-NOW',
+    title: 'Software Engineer',
+    org: 'Prismatecs Smart Solutions, Cairo, Egypt',
+    period: '11/2025 – Present',
+    desc: 'Develop and maintain full-stack web applications, covering both front-end interfaces and PHP-based back-end systems. Design and integrate AI-powered features into web applications to improve functionality and user experience. Build responsive web interfaces and design scalable, efficient database architectures.',
+    skills: ['PHP', 'Full-Stack', 'AI Integration', 'Database Design', 'Responsive UI']
+  },
+  {
+    year: '2026-NOW',
+    title: 'Coding Instructor',
+    org: 'EYOUTH, Online',
+    period: '04/2026 – Present',
+    desc: 'Teaching coding and programming for teenagers; delivering Web Development and AI for students. Empowering young learners with core computer science principles and hands-on coding exercises.',
+    skills: ['Python', 'Web Development', 'AI', 'Teaching', 'Curriculum Design']
+  },
+  {
+    year: '2025-NOW',
+    title: 'Freelancing Coach',
+    org: 'Career 180, DEPI Program, Cairo, Egypt',
+    period: '09/2025 – Present',
+    desc: 'Supported students in achieving project milestones across different tech tracks. Mentored two groups of learners, helping them secure freelancing gigs and build strong profiles. Monitored progress, reported outcomes, and delivered practical insights and strategies for freelancing success based on personal experience.',
+    skills: ['Freelancing Coaching', 'DEPI Program', 'Mentorship', 'Profile Optimization']
+  },
+  {
+    year: '2025-26',
+    title: 'Full Stack .NET & Angular Engineer',
+    org: 'Hive Solutions Company, Cairo, Egypt',
+    period: '09/2025 – 2026',
+    desc: 'Developed full-stack solutions for enterprise clients. Implemented RESTful APIs with ASP.NET Core and responsive UIs with Angular. Collaborated in AGILE teams, improving system performance and delivery speed.',
+    skills: ['ASP.NET Core', 'Angular', 'RESTful APIs', 'Enterprise Solutions', 'Agile']
+  },
+  {
     year: '2025',
     title: '.NET Engineer Intern',
     org: 'Ejada Company, Cairo, Egypt',
-    period: 'July 2025 - September 2025',
-    desc: 'Working on Back-End enterprise projects with ASP.NET Core alongside a senior development team. Gaining deep hands-on expertise in Microservices architecture, SignalR real-time communications, Entity Framework Core optimization, and Agile scrum workflows.',
-    skills: ['ASP.NET Core', 'Microservices', 'SignalR', 'Entity Framework', 'Agile']
+    period: '07/2025 – 09/2025',
+    desc: 'Worked on Back-End Real Projects With ASP.NET with a strong Team in Ejada Company and mastered Microservices, SignalR, Entity Framework Core, database design, and Agile workflows.',
+    skills: ['ASP.NET Core', 'Microservices', 'SignalR', 'Entity Framework', 'Database Design', 'Agile']
   },
   {
-    year: '2024-NOW',
+    year: '2024-25',
     title: 'DEMI Coding Instructor',
     org: 'iSchool, Cairo, Egypt',
-    period: 'October 2024 - Present',
-    desc: 'Teaching Python programming, problem-solving, and machine learning fundamentals to 25+ students. Utilizing interactive environments (Scratch, mBlock, Pictoblocks) to simplify AI principles and foster computational thinking.',
-    skills: ['Python', 'Machine Learning', 'Curriculum Instruction', 'Mentoring']
+    period: '10/2024 – 07/2025',
+    desc: 'Taught Python and introductory machine learning concepts to 25+ sixth-grade students. Utilized Scratch, mBlock, and Pictoblocks to simplify AI principles for beginners.',
+    skills: ['Python', 'Machine Learning', 'Scratch', 'mBlock', 'Pictoblocks']
   },
   {
     year: '2022-26',
-    title: 'B.Sc. in Computer & Information Sciences',
+    title: 'Bachelor of Computer and Information Sciences',
     org: 'Ain Shams University, Cairo, Egypt',
-    period: 'Expected June 2026 (GPA: 3.7 / 4.0)',
-    desc: 'Key Coursework: Database Design, Operating Systems, Data Structures & Algorithms, Object-Oriented Programming, Machine Learning, Software Engineering, Computer Networks, Linear Algebra, Computer Vision, Computer Graphics.',
-    skills: ['OOP', 'Data Structures', 'Operating Systems', 'Algorithms', 'Databases']
+    period: '07/2022 – 05/2026 (GPA: 3.7 / 4.0)',
+    desc: 'Key Coursework: Database Design, Operating Systems, Data Structures & Algorithms, Object-Oriented Programming, Machine Learning, Software Engineering, Computer Networks, Linear Algebra, Probability, Computer Vision, Computer Graphics, Deep Learning, NLP.',
+    skills: ['Data Structures', 'Algorithms', 'Deep Learning', 'Computer Vision', 'NLP', 'Databases']
   }
 ];
 
 const ACHIEVEMENTS = [
   {
-    title: '10th Place - AIC2 National Competition',
-    badge: 'AI/ML Developer',
+    title: '1st Place Public / 3rd Private - Neural Network & Sentiment Analysis Competition',
+    badge: '1st Place Public • 3rd Private',
     year: '2025',
-    desc: 'Achieved 68% accuracy in advanced AI/ML competition using ensemble methods, neural networks, and a refined preprocessing pipeline against top university teams.',
-    link: 'https://github.com/mohamed-khalid-gamal/AIC2_AinEl3aql'
+    desc: 'Developed a robust ensemble model combining DeBERTa V3 Large, BiLSTM, and CNN to handle highly imbalanced ordinal sentiment data. Applied Layer-wise Learning Rate Decay (LLRD) and a custom Combined Ordinal Focal Loss to improve hard-example learning while preserving class ordering.',
+    link: 'https://github.com/mohamed-khalid-gamal'
   },
   {
     title: '2nd Place - ASU Machine Learning Competition',
-    badge: 'Team Lead',
+    badge: '2nd Place Winner & Team Lead',
     year: '2025',
-    desc: 'Led a team of 6 engineers to build an Airbnb guest satisfaction predictor processing 50K+ records with 15+ ML models and NLP sentiment analysis.',
+    desc: 'Secured 2nd Place by developing a dual regression and classification system for predicting Airbnb guest satisfaction across 50K+ listings. Applied advanced feature engineering, KMeans clustering, VADER and TF-IDF text analysis, SMOTE, and evaluated 15 machine learning algorithms.',
     link: 'https://github.com/mohamed-khalid-gamal/ML_Guest_Satisfaction'
   },
   {
-    title: 'Codeforces Specialist Rating',
-    badge: 'Competitive Programming',
+    title: 'ECPC Competitor (Egyptian Collegiate Programming Contest)',
+    badge: '13th ASU • 54th / 260+ Teams',
+    year: '2024 - 2025',
+    desc: 'Achieved the 13th place on Ain Shams University and 54th place over 260 teams from ASU and Cairo University in the prestigious Egyptian Collegiate Programming Contest.',
+    link: 'https://codeforces.com'
+  },
+  {
+    title: 'Codeforces Specialist Rating (ACMASCIS Member)',
+    badge: 'Competitive Programming Specialist',
     year: '2024 - Present',
-    desc: 'Active competitive programmer with extensive problem-solving experience in dynamic programming, graph theory, number theory, and advanced data structures.',
+    desc: 'Active competitive programmer with Codeforces Specialist rating with verified expertise in algorithms, data structures, dynamic programming (DP), and graph theory.',
     link: 'https://codeforces.com'
   }
 ];
@@ -234,55 +314,79 @@ const LEADERSHIP = [
     title: 'Head of Web Development',
     org: 'Faculty of Computer Science, Ain Shams University',
     period: 'Present',
-    desc: 'Leading a core team of 20 instructors delivering full-stack curriculum (Level 1: React, Level 2: ASP.NET Core) to 50+ undergraduate students.'
+    desc: 'Leading a core team of 20 members delivering comprehensive web development education to 50+ undergraduate students. Designed complete curriculum: Level 1 (React), Level 2 (ASP.NET Core).'
   },
   {
     title: 'Web Development Workshop Organizer',
     org: 'Faculty of Computer Science, Ain Shams University',
     period: 'Jun 2024 - Feb 2025',
-    desc: 'Designed and led workshops on SASS, ES6, jQuery, and Bootstrap for 50+ students. Authored curriculum and published comprehensive video playlist.'
+    desc: 'Designed and led advanced workshops on SASS, ES6, jQuery, and Bootstrap for 50+ students. Authored curriculum and published comprehensive video playlist.'
+  },
+  {
+    title: 'Freelancing Coach',
+    org: 'Career 180, DEPI Program',
+    period: '09/2025 - Present',
+    desc: 'Mentored two groups of learners, helping them secure freelancing gigs and build strong professional profiles while delivering practical strategies based on real-world experience.'
+  },
+  {
+    title: 'Coding Instructor & Mentor (2,000+ Learners)',
+    org: 'EYOUTH & iSchool',
+    period: 'Oct 2024 - Present',
+    desc: 'Taught and mentored 2,000+ learners across coding, web development, and AI fundamentals, translating complex software concepts into accessible educational material.'
   },
   {
     title: 'ACM / ASCIS Active Member',
     org: 'Ain Shams University Competitive Programming Community',
     period: 'Oct 2024 - Present',
-    desc: 'Regular contestant and mentor in university programming camps, guiding junior students through algorithmic puzzles and mock contests.'
+    desc: 'Regular contestant and mentor in university programming camps, training junior students in problem-solving techniques and algorithmic optimizations.'
   }
 ];
 
 const SKILL_CATEGORIES = {
   backend: [
-    { name: 'C# / .NET 8', pct: 92 },
-    { name: 'ASP.NET Core Web API', pct: 90 },
-    { name: 'Entity Framework Core', pct: 88 },
-    { name: 'RESTful Architecture & Swagger', pct: 90 },
-    { name: 'Python (OOP & Scripting)', pct: 85 },
-    { name: 'Java (Core)', pct: 75 },
-    { name: 'Microservices & SignalR', pct: 82 }
+    { name: 'C# / .NET 8 / .NET Core', pct: 94 },
+    { name: 'ASP.NET Core Web API', pct: 92 },
+    { name: 'ASP.NET MVC & EF Core', pct: 90 },
+    { name: 'PHP & Backend Systems', pct: 88 },
+    { name: 'Python (FastAPI & OOP)', pct: 90 },
+    { name: 'Microservices & SignalR', pct: 86 },
+    { name: 'RESTful Web APIs & JWT', pct: 92 },
+    { name: 'NodeJS & Java (Core)', pct: 80 }
   ],
   frontend: [
-    { name: 'JavaScript (ES6+)', pct: 88 },
-    { name: 'React', pct: 82 },
-    { name: 'TypeScript', pct: 78 },
-    { name: 'HTML5 & CSS3 / SASS', pct: 92 },
-    { name: 'Bootstrap & Tailwind', pct: 88 },
-    { name: 'jQuery & Ajax', pct: 85 }
+    { name: 'Angular / Angular 10+', pct: 90 },
+    { name: 'React & NextJS', pct: 90 },
+    { name: 'TypeScript & JavaScript (ES6+)', pct: 92 },
+    { name: 'HTML5, CSS3 & SASS', pct: 94 },
+    { name: 'Bootstrap & Tailwind CSS', pct: 90 },
+    { name: 'RxJS, NgRx & Redux', pct: 84 },
+    { name: 'jQuery, Ajax, GSAP & ThreeJS', pct: 82 }
+  ],
+  ai: [
+    { name: 'Agentic AI & Spec Development', pct: 90 },
+    { name: 'LLMs, RAG & Prompt Engineering', pct: 92 },
+    { name: 'Computer Vision (YOLOv8, MediaPipe)', pct: 92 },
+    { name: 'NLP (SBERT, DeBERTa, NLTK)', pct: 90 },
+    { name: 'Speech Tech (Parakeet STT, Coqui TTS)', pct: 86 },
+    { name: 'Deep Learning & Neural Networks', pct: 88 },
+    { name: 'Vibe Coding & Rapid Prototyping', pct: 95 }
   ],
   data: [
-    { name: 'SQL Server (T-SQL, Stored Procs)', pct: 88 },
-    { name: 'MySQL Database', pct: 82 },
-    { name: 'Pandas & NumPy', pct: 86 },
-    { name: 'Scikit-learn', pct: 84 },
-    { name: 'XGBoost & Ensemble ML', pct: 82 },
-    { name: 'NLP & Text Preprocessing', pct: 78 }
+    { name: 'SQL Server (Optimization & Stored Procs)', pct: 90 },
+    { name: 'PostgreSQL & ChromaDB (Vector DB)', pct: 88 },
+    { name: 'MySQL & MongoDB', pct: 85 },
+    { name: 'Pandas & NumPy', pct: 90 },
+    { name: 'Scikit-learn & XGBoost', pct: 88 },
+    { name: 'Feature Engineering & Clustering', pct: 88 }
   ],
   tools: [
-    { name: 'Git & GitHub', pct: 92 },
-    { name: 'Visual Studio & VS Code', pct: 90 },
-    { name: 'Postman API Testing', pct: 88 },
-    { name: 'Agile & Scrum Methodologies', pct: 86 },
-    { name: 'Cloudinary & Cloud Storage', pct: 80 },
-    { name: 'xUnit & Moq Unit Testing', pct: 82 }
+    { name: 'Git & GitHub', pct: 94 },
+    { name: 'Docker', pct: 84 },
+    { name: 'Visual Studio 2022 & VS Code', pct: 92 },
+    { name: 'PyCharm, Cursor & Postman', pct: 90 },
+    { name: 'Swagger & REST API Testing', pct: 90 },
+    { name: 'AGILE & Scrum Methodologies', pct: 90 },
+    { name: 'Wamp Server & Cpanel', pct: 84 }
   ]
 };
 
@@ -438,10 +542,10 @@ const BIOS_LINES = [
   'Memory Test : 65536K OK (Cumulative GPA: 3.7 / 4.0)',
   '',
   'Detecting IDE Devices ...',
-  '  Primary Master   : ASP.NET CORE / C# 8.0 DRIVE [READY]',
-  '  Primary Slave    : PYTHON / MACHINE LEARNING DISK [READY]',
-  '  Secondary Master : SQL SERVER / EF CORE DATABASE [READY]',
-  '  Secondary Slave  : REACT & TYPESCRIPT ENGINE [READY]',
+  '  Primary Master   : ASP.NET CORE / .NET 8 / PHP / C# [READY]',
+  '  Primary Slave    : LLM / RAG / COMPUTER VISION / AI [READY]',
+  '  Secondary Master : SQL SERVER / POSTGRESQL / MONGO [READY]',
+  '  Secondary Slave  : ANGULAR & REACT TS FRONTEND [READY]',
   '  Audio Controller : SOUND BLASTER 16 [ACTIVE]',
   '',
   'Starting Mohamed Oraby OS 98 ...'
@@ -528,17 +632,17 @@ if (scanlineToggleBtn) {
    WINDOW DEFINITIONS & TEMPLATES
    ===================================================================== */
 const WIN_CONFIG = {
-  home: { title: 'Mohamed Oraby - Welcome', icon: ICON.flag, w: 460 },
-  projects: { title: 'Featured Projects', icon: ICON.projects, w: 580 },
-  experience: { title: 'Professional Experience', icon: ICON.experience, w: 500 },
-  skills: { title: 'Technical Skills Properties', icon: ICON.skills, w: 480 },
-  achievements: { title: 'Key Achievements & Competitions', icon: ICON.achievements, w: 490 },
-  leadership: { title: 'Leadership & Student Activities', icon: ICON.leadership, w: 470 },
-  readme: { title: 'About_Mohamed.txt - Notepad', icon: ICON.txt, w: 450 },
+  home: { title: 'Mohamed Oraby - Welcome', icon: ICON.flag, w: 480 },
+  projects: { title: 'Featured Projects', icon: ICON.projects, w: 600 },
+  experience: { title: 'Professional Experience', icon: ICON.experience, w: 540 },
+  skills: { title: 'Technical Skills Properties', icon: ICON.skills, w: 540 },
+  achievements: { title: 'Key Achievements & Competitions', icon: ICON.achievements, w: 520 },
+  leadership: { title: 'Leadership & Student Activities', icon: ICON.leadership, w: 520 },
+  readme: { title: 'About_Mohamed.txt - Notepad', icon: ICON.txt, w: 490 },
   contact: { title: 'Compose Message - Outlook 98', icon: ICON.contact, w: 460 },
-  cmd: { title: 'MS-DOS Prompt', icon: ICON.cmd, w: 520 },
+  cmd: { title: 'MS-DOS Prompt', icon: ICON.cmd, w: 540 },
   minesweeper: { title: 'Minesweeper', icon: ICON.minesweeper, w: 260 },
-  resume: { title: 'Mohamed_Oraby_CV.pdf', icon: ICON.resume, w: 480 },
+  resume: { title: 'Mohamed_Oraby_CV.pdf', icon: ICON.resume, w: 620 },
   pc: { title: 'My Computer', icon: ICON.pc, w: 380 },
   bin: { title: 'Recycle Bin', icon: ICON.bin, w: 320 }
 };
@@ -553,8 +657,8 @@ function homeBodyHTML() {
           </div>
           <div class="home-hero-text">
             <h2 class="home-hero-title">MOHAMED ORABY</h2>
-            <p class="home-hero-subtitle">Junior Full-stack Developer & CS Student</p>
-            <span class="home-hero-badge">Ain Shams University '26 • GPA 3.7 • .NET Intern @ Ejada • PWA Offline Ready</span>
+            <p class="home-hero-subtitle">Software & AI Engineer</p>
+            <span class="home-hero-badge">Ain Shams University '26 • GPA 3.7 • 3+ Years Exp • Full-Stack & AI</span>
           </div>
         </div>
       </div>
@@ -564,7 +668,7 @@ function homeBodyHTML() {
           <span class="ico">${ICON.projects}</span>
           <div class="mt-txt">
             <b>Featured Projects</b>
-            <small>8 production & ML apps</small>
+            <small>11 enterprise, AI & web apps</small>
           </div>
         </button>
 
@@ -572,7 +676,7 @@ function homeBodyHTML() {
           <span class="ico">${ICON.experience}</span>
           <div class="mt-txt">
             <b>Experience</b>
-            <small>Ejada Intern & iSchool</small>
+            <small>Prismatecs, Hive, DEPI, Ejada</small>
           </div>
         </button>
 
@@ -580,7 +684,7 @@ function homeBodyHTML() {
           <span class="ico">${ICON.skills}</span>
           <div class="mt-txt">
             <b>Tech Skills</b>
-            <small>.NET 8, React, Python, SQL</small>
+            <small>.NET, Angular, React, PHP, AI</small>
           </div>
         </button>
 
@@ -588,7 +692,7 @@ function homeBodyHTML() {
           <span class="ico">${ICON.achievements}</span>
           <div class="mt-txt">
             <b>Achievements</b>
-            <small>AIC2 & ASU ML Winner</small>
+            <small>1st Place Neural Net, ASU ML</small>
           </div>
         </button>
 
@@ -596,7 +700,7 @@ function homeBodyHTML() {
           <span class="ico">${ICON.leadership}</span>
           <div class="mt-txt">
             <b>Leadership</b>
-            <small>Head of Web Dev @ ASU</small>
+            <small>Head of Web Dev, 2000+ Learners</small>
           </div>
         </button>
 
@@ -634,7 +738,7 @@ function homeBodyHTML() {
       </div>
     </div>
     <div class="statusbar">
-      <span class="cell grow">Mohamed Oraby • Junior Full-Stack Developer</span>
+      <span class="cell grow">Mohamed Oraby • Software & AI Engineer</span>
       <span class="cell">Cairo, Egypt</span>
     </div>`;
 }
@@ -668,16 +772,17 @@ function projectsBodyHTML() {
     <div class="win-body">
       <div class="projects-filter-bar">
         <button class="filter-btn active" data-filter="all">All Projects (${PROJECTS.length})</button>
-        <button class="filter-btn" data-filter="dotnet">.NET & Backend</button>
-        <button class="filter-btn" data-filter="ai">AI & Machine Learning</button>
-        <button class="filter-btn" data-filter="systems">Systems & Graph Theory</button>
+        <button class="filter-btn" data-filter="ai">AI & ML</button>
+        <button class="filter-btn" data-filter="enterprise">Enterprise & SaaS</button>
+        <button class="filter-btn" data-filter="dotnet">.NET & Full-Stack</button>
+        <button class="filter-btn" data-filter="systems">Systems & Core</button>
       </div>
       <div id="projects-container">
         ${cards}
       </div>
     </div>
     <div class="statusbar">
-      <span class="cell grow">8 Projects Loaded • Production & Academic</span>
+      <span class="cell grow">${PROJECTS.length} Projects Loaded • Enterprise, AI & Production</span>
       <span class="cell">Local Disk (C:)</span>
     </div>`;
 }
@@ -731,34 +836,40 @@ function skillsBodyHTML() {
       <div class="tab-bar">
         <button class="tab-btn active" data-tab="tab-backend">Backend</button>
         <button class="tab-btn" data-tab="tab-frontend">Frontend</button>
-        <button class="tab-btn" data-tab="tab-data">Data & ML</button>
+        <button class="tab-btn" data-tab="tab-ai">AI & ML</button>
+        <button class="tab-btn" data-tab="tab-data">Database & Data</button>
         <button class="tab-btn" data-tab="tab-tools">DevOps & Tools</button>
       </div>
 
       <div class="win-body" style="margin-top: 0; min-height: 250px;">
         <div id="tab-backend" class="tab-content active">
-          <p style="margin: 0 0 10px; color: #555; font-size: 11px;">Core backend frameworks, API design, and asynchronous patterns:</p>
+          <p style="margin: 0 0 10px; color: #555; font-size: 11px;">Core backend frameworks, API design, distributed systems, and microservices:</p>
           ${renderSkills(SKILL_CATEGORIES.backend)}
         </div>
 
         <div id="tab-frontend" class="tab-content">
-          <p style="margin: 0 0 10px; color: #555; font-size: 11px;">User interface engineering, responsive web tech, and SPAs:</p>
+          <p style="margin: 0 0 10px; color: #555; font-size: 11px;">Modern single-page applications, Angular, React, TypeScript, responsive layouts:</p>
           ${renderSkills(SKILL_CATEGORIES.frontend)}
         </div>
 
+        <div id="tab-ai" class="tab-content">
+          <p style="margin: 0 0 10px; color: #555; font-size: 11px;">Agentic AI, LLMs & RAG, Computer Vision (YOLOv8, MediaPipe), Speech tech, Deep Learning:</p>
+          ${renderSkills(SKILL_CATEGORIES.ai)}
+        </div>
+
         <div id="tab-data" class="tab-content">
-          <p style="margin: 0 0 10px; color: #555; font-size: 11px;">Relational database schemas, machine learning models, and NLP:</p>
+          <p style="margin: 0 0 10px; color: #555; font-size: 11px;">Relational & vector databases, SQL query optimization, data science, feature engineering:</p>
           ${renderSkills(SKILL_CATEGORIES.data)}
         </div>
 
         <div id="tab-tools" class="tab-content">
-          <p style="margin: 0 0 10px; color: #555; font-size: 11px;">Developer tooling, unit testing frameworks, and methodologies:</p>
+          <p style="margin: 0 0 10px; color: #555; font-size: 11px;">Developer tooling, containerization, API testing suites, and Agile collaboration:</p>
           ${renderSkills(SKILL_CATEGORIES.tools)}
         </div>
       </div>
     </div>
     <div class="statusbar">
-      <span class="cell grow">System Properties: 25 Verified Competencies</span>
+      <span class="cell grow">System Properties: 35+ Verified Competencies</span>
       <span class="cell">100% Functional</span>
     </div>`;
 }
@@ -813,42 +924,53 @@ function leadershipBodyHTML() {
 function readmeBodyHTML() {
   return `
     <div class="win-menubar"><span><u>F</u>ile</span><span><u>E</u>dit</span><span><u>S</u>earch</span><span><u>H</u>elp</span></div>
-    <div class="win-body" style="font-family: var(--mono); font-size: 16px; line-height: 1.35; white-space: pre-wrap; color: #000;">
+    <div class="win-body" style="font-family: var(--mono); font-size: 15px; line-height: 1.4; white-space: pre-wrap; color: #000; padding: 12px;">
 MOHAMED KHALID ORABY
 ===================================================
-Junior Full-stack Developer & CS Student
+Software & AI Engineer
 Ain Shams University, Faculty of Computer Science
 Class of 2026 | Cumulative GPA: 3.7 / 4.0
 Cairo, Egypt
 
-MISSION & PHILOSOPHY
+PROFESSIONAL SUMMARY
 --------------------
-Taste over tech. Precision over noise.
+Software & AI Engineer with 3+ years of experience delivering
+scalable full-stack applications and AI-powered products using
+.NET, Angular, React, PHP, and Python. Contributed to an enterprise
+SaaS ERP platform serving 1,500+ nonprofit organizations, featuring
+900+ pages and 30 integrated management modules. Co-developed JobLens,
+an A+ AI recruitment platform combining LLMs, RAG, NLP, speech
+technologies, and computer vision (99% mAP50, 98% precision/recall).
+Proven problem solver with strong competitive programming and machine
+learning achievements, plus experience teaching and mentoring 2,000+
+learners. Skilled at translating complex requirements into reliable,
+scalable, and user-focused software solutions.
 
-I build robust, reliable software that pairs clean back-end architecture
-with responsive front-end experiences. Whether architecting a .NET 8
-microservice with CQRS and MediatR, training an ensemble ML classifier,
-or teaching 50+ students the foundations of web technologies,
-I focus on clean execution and measurable real-world results.
+CURRENT ROLES & ACTIVITIES:
+- Software Engineer @ Prismatecs Smart Solutions
+- Coding Instructor @ EYOUTH (Web Dev & AI for students)
+- Freelancing Coach @ Career 180, DEPI Program
+- Full Stack .NET & Angular Engineer @ Hive Solutions Company
+- Former .NET Engineer Intern @ Ejada Company
+- Former DEMI Coding Instructor @ iSchool
 
-CORE HIGHLIGHTS:
-- Current .NET Engineer Intern at Ejada Company
-- DEMI Coding Instructor at iSchool
-- 10th Place in National AIC2 AI Competition (68% accuracy)
-- 2nd Place in ASU Machine Learning Competition (Team Lead)
-- Head of Web Development at Ain Shams University FCIS
-- Codeforces Specialist rating in algorithms and data structures
+KEY ACHIEVEMENTS:
+- 1st Place Public / 3rd Private: Neural Network & Sentiment Analysis (DeBERTa + BiLSTM + CNN)
+- 2nd Place: ASU Machine Learning Competition (Airbnb satisfaction predictor, Team Lead)
+- ECPC Competitor: 13th place ASU, 54th over 260 teams from ASU & Cairo University
+- ACMASCIS Member: Codeforces Specialist rating in algorithms and data structures
+- Head of Web Development @ Ain Shams University FCIS (Team of 20, 50+ students)
 
 CONTACT:
 - Email    : mohamed.khalid.gamal@gmail.com
-- Phone    : +201208473203
+- Phone    : +201211099674
 - LinkedIn : linkedin.com/in/mohamed-khalid-gamal
 - GitHub   : github.com/mohamed-khalid-gamal
 ===================================================
     </div>
     <div class="statusbar">
       <span class="cell grow">About_Mohamed.txt</span>
-      <span class="cell">Ln 28, Col 1</span>
+      <span class="cell">Ln 38, Col 1</span>
     </div>`;
 }
 
@@ -932,45 +1054,266 @@ function minesweeperBodyHTML() {
 function resumeBodyHTML() {
   return `
     <div class="win-menubar"><span><u>F</u>ile</span><span><u>V</u>iew</span><span><u>P</u>rint</span><span><u>H</u>elp</span></div>
-    <div class="win-body" style="line-height: 1.45;">
-      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #000; padding-bottom: 8px; margin-bottom: 12px;">
+    <div class="win-body" style="line-height: 1.45; font-size: 12px; color: #111; max-height: 480px; overflow-y: auto; padding: 14px;">
+      <!-- CV Header -->
+      <div style="border-bottom: 2px solid #000082; padding-bottom: 10px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 8px;">
         <div>
-          <h2 style="margin: 0; font-size: 18px; color: #000082;">Mohamed Khalid Oraby</h2>
-          <p style="margin: 2px 0 0; font-size: 11px; color: #444;">Junior Full-Stack Developer | Cairo, Egypt</p>
+          <h1 style="margin: 0; font-size: 22px; color: #000082; letter-spacing: 0.5px;">Mohamed Oraby</h1>
+          <div style="font-size: 13px; font-weight: bold; color: #333; margin-top: 2px;">Software & AI Engineer</div>
+          <div style="font-size: 11px; color: #555; margin-top: 4px; display: flex; flex-wrap: wrap; gap: 12px;">
+            <span>📧 <a href="mailto:${PROFILE.email}">${PROFILE.email}</a></span>
+            <span>📱 <a href="tel:${PROFILE.phone}">${PROFILE.phone}</a></span>
+            <span>📍 Egypt, Cairo</span>
+          </div>
+          <div style="font-size: 11px; margin-top: 4px; display: flex; flex-wrap: wrap; gap: 12px;">
+            <span>🌐 <a href="#home">Portfolio</a></span>
+            <span>💼 <a href="${PROFILE.linkedin}" target="_blank" rel="noopener">LinkedIn Profile</a></span>
+            <span>🐙 <a href="${PROFILE.github}" target="_blank" rel="noopener">GitHub</a></span>
+          </div>
         </div>
         <div>
-          <button class="btn98 btn98-primary" onclick="window.print()">${ICON.resume} Print / Save PDF</button>
+          <button class="btn98 btn98-primary" onclick="window.print()" style="font-weight: bold;">${ICON.resume} Print / Save PDF</button>
         </div>
       </div>
 
-      <div style="margin-bottom: 12px;">
-        <h4 style="margin: 0 0 4px; font-size: 12.5px; border-bottom: 1px solid #999; color: #000082;">EDUCATION</h4>
-        <p style="margin: 2px 0;"><b>B.Sc. in Computer & Information Sciences</b> — Ain Shams University</p>
-        <p style="margin: 2px 0; font-size: 11px; color: #444;">Expected June 2026 | GPA: 3.7 / 4.0</p>
+      <!-- Summary -->
+      <div style="margin-bottom: 14px;">
+        <h3 style="margin: 0 0 4px; font-size: 13px; background: #e0e4f0; padding: 3px 6px; color: #000082; border-left: 3px solid #000082;">SUMMARY</h3>
+        <p style="margin: 4px 0 0; font-size: 11.5px; line-height: 1.5; color: #222;">
+          Software & AI Engineer with 3+ years of experience delivering scalable full-stack applications and AI-powered products using .NET, Angular, React, PHP, and Python. Contributed to an enterprise SaaS ERP platform serving 1,500+ nonprofit organizations, featuring 900+ pages and 30 integrated management modules. Co-developed JobLens, an A+ AI recruitment platform combining LLMs, RAG, NLP, speech technologies, and computer vision, with models achieving up to 99% mAP50 and 98% precision and recall. Proven problem solver with strong competitive programming and machine learning achievements, plus experience teaching and mentoring 2,000+ learners. Skilled at translating complex requirements into reliable, scalable, and user-focused software solutions.
+        </p>
       </div>
 
-      <div style="margin-bottom: 12px;">
-        <h4 style="margin: 0 0 4px; font-size: 12.5px; border-bottom: 1px solid #999; color: #000082;">EXPERIENCE</h4>
-        <p style="margin: 2px 0;"><b>.NET Engineer Intern</b> — Ejada Company (July 2025 – Sept 2025)</p>
-        <p style="margin: 2px 0;"><b>DEMI Coding Instructor</b> — iSchool (Oct 2024 – Present)</p>
+      <!-- Education -->
+      <div style="margin-bottom: 14px;">
+        <h3 style="margin: 0 0 6px; font-size: 13px; background: #e0e4f0; padding: 3px 6px; color: #000082; border-left: 3px solid #000082;">EDUCATION</h3>
+        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+          <b>Bachelor of Computer and Information Sciences</b>
+          <span style="font-size: 11px; color: #555;">07/2022 – 05/2026 | Cairo, Egypt</span>
+        </div>
+        <div style="font-size: 11.5px; color: #333;">Ain Shams University • <b>GPA: 3.7 / 4.0</b></div>
+        <div style="font-size: 11px; color: #444; margin-top: 3px;">
+          <b>Key Coursework:</b> Database Design, Operating Systems, Data Structures & Algorithms, Object-Oriented Programming, Machine Learning, Software Engineering, Computer Networks, Linear Algebra, Probability, Computer Vision, Computer Graphics, Deep Learning, NLP.
+        </div>
       </div>
 
-      <div style="margin-bottom: 12px;">
-        <h4 style="margin: 0 0 4px; font-size: 12.5px; border-bottom: 1px solid #999; color: #000082;">KEY COMPETITIONS</h4>
-        <p style="margin: 2px 0;"><b>10th Place</b> — AIC2 National Machine Learning Competition (68% Accuracy)</p>
-        <p style="margin: 2px 0;"><b>2nd Place & Team Lead</b> — ASU Machine Learning Competition</p>
+      <!-- Relative Experience and Activities -->
+      <div style="margin-bottom: 14px;">
+        <h3 style="margin: 0 0 6px; font-size: 13px; background: #e0e4f0; padding: 3px 6px; color: #000082; border-left: 3px solid #000082;">RELATIVE EXPERIENCE AND ACTIVITIES</h3>
+        
+        <div style="margin-bottom: 10px;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline;">
+            <b>Software Engineer</b>
+            <span style="font-size: 11px; color: #555;">11/2025 – Present | Cairo, Egypt</span>
+          </div>
+          <div style="font-size: 11px; color: #000082;">Prismatecs Smart Solutions</div>
+          <ul style="margin: 3px 0 0 18px; padding: 0; font-size: 11px; color: #333; line-height: 1.45;">
+            <li>Develop and maintain full-stack web applications, covering both front-end interfaces and PHP-based back-end systems.</li>
+            <li>Design and integrate AI-powered features into web applications to improve functionality and user experience.</li>
+            <li>Build responsive web interfaces and design scalable, efficient database architectures.</li>
+          </ul>
+        </div>
+
+        <div style="margin-bottom: 10px;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline;">
+            <b>Coding Instructor</b>
+            <span style="font-size: 11px; color: #555;">04/2026 – Present | Online</span>
+          </div>
+          <div style="font-size: 11px; color: #000082;">EYOUTH</div>
+          <ul style="margin: 3px 0 0 18px; padding: 0; font-size: 11px; color: #333; line-height: 1.45;">
+            <li>Teaching coding and programming for teenagers.</li>
+            <li>Delivering Web Development and AI for students.</li>
+          </ul>
+        </div>
+
+        <div style="margin-bottom: 10px;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline;">
+            <b>Freelancing Coach</b>
+            <span style="font-size: 11px; color: #555;">09/2025 – Present | Cairo, Egypt</span>
+          </div>
+          <div style="font-size: 11px; color: #000082;">Career 180, DEPI Program</div>
+          <ul style="margin: 3px 0 0 18px; padding: 0; font-size: 11px; color: #333; line-height: 1.45;">
+            <li>Supported students in achieving project milestones across different tech tracks.</li>
+            <li>Mentored two groups of learners, helping them secure freelancing gigs and build strong profiles.</li>
+            <li>Monitored progress, reported outcomes, and provided feedback to the project team.</li>
+            <li>Delivered practical insights and strategies for freelancing success based on personal experience.</li>
+          </ul>
+        </div>
+
+        <div style="margin-bottom: 10px;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline;">
+            <b>Full Stack .NET & Angular Engineer</b>
+            <span style="font-size: 11px; color: #555;">09/2025 – 2026 | Cairo, Egypt</span>
+          </div>
+          <div style="font-size: 11px; color: #000082;">Hive Solutions Company</div>
+          <ul style="margin: 3px 0 0 18px; padding: 0; font-size: 11px; color: #333; line-height: 1.45;">
+            <li>Developed full-stack solutions for enterprise clients.</li>
+            <li>Implemented RESTful APIs with ASP.NET Core and responsive UIs with Angular.</li>
+            <li>Collaborated in AGILE teams, improving system performance and delivery speed.</li>
+          </ul>
+        </div>
+
+        <div style="margin-bottom: 10px;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline;">
+            <b>.NET Engineer Intern</b>
+            <span style="font-size: 11px; color: #555;">07/2025 – 09/2025 | Cairo, Egypt</span>
+          </div>
+          <div style="font-size: 11px; color: #000082;">Ejada Company</div>
+          <ul style="margin: 3px 0 0 18px; padding: 0; font-size: 11px; color: #333; line-height: 1.45;">
+            <li>Work on Back-End Real Projects With ASP.NET with a strong Team in Ejada Company and learn a lot of things Like: Microservices, SignalR, Entity Framework Core, etc.</li>
+            <li>Work With AGILE, GITHUB, DESIGN Databases.</li>
+          </ul>
+        </div>
+
+        <div style="margin-bottom: 10px;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline;">
+            <b>DEMI Coding Instructor</b>
+            <span style="font-size: 11px; color: #555;">10/2024 – 07/2025 | Cairo, Egypt</span>
+          </div>
+          <div style="font-size: 11px; color: #000082;">iSchool</div>
+          <ul style="margin: 3px 0 0 18px; padding: 0; font-size: 11px; color: #333; line-height: 1.45;">
+            <li>Taught Python and introductory machine learning concepts to 25+ sixth-grade students.</li>
+            <li>Utilized Scratch, mBlock, and Pictoblocks to simplify AI principles for beginners.</li>
+          </ul>
+        </div>
       </div>
 
-      <div style="margin-bottom: 12px;">
-        <h4 style="margin: 0 0 4px; font-size: 12.5px; border-bottom: 1px solid #999; color: #000082;">CONTACT & LINKS</h4>
-        <p style="margin: 2px 0;">Email: <a href="mailto:${PROFILE.email}">${PROFILE.email}</a></p>
-        <p style="margin: 2px 0;">Phone: <a href="tel:${PROFILE.phone}">${PROFILE.phone}</a></p>
-        <p style="margin: 2px 0;">GitHub: <a href="${PROFILE.github}" target="_blank">${PROFILE.github}</a></p>
-        <p style="margin: 2px 0;">LinkedIn: <a href="${PROFILE.linkedin}" target="_blank">${PROFILE.linkedin}</a></p>
+      <!-- Technical Skills -->
+      <div style="margin-bottom: 14px;">
+        <h3 style="margin: 0 0 6px; font-size: 13px; background: #e0e4f0; padding: 3px 6px; color: #000082; border-left: 3px solid #000082;">TECHNICAL SKILLS</h3>
+        <ul style="margin: 0 0 0 18px; padding: 0; font-size: 11px; color: #333; line-height: 1.55;">
+          <li><b>Backend Development:</b> PHP, C#, Python, Java, ASP.NET Core, ASP.NET MVC, Entity Framework Core, RESTful Web API, JWT Authentication, Microservices, SignalR, NodeJS</li>
+          <li><b>Frontend Development:</b> JavaScript (ES6+), React, TypeScript, Angular, HTML5, CSS3, Bootstrap, jQuery, SASS, Ajax, GSAP, ThreeJS, Angular 10+, RxJS, NgRx, NextJS, Redux</li>
+          <li><b>AI Skills:</b> Agentic AI, Prompt Engineering, Computer Vision, NLP, Deep Learning, Neural Networks, Vibe Coding, Spec development</li>
+          <li><b>Database & Data Science:</b> MongoDB, SQL Server, MySQL, Pandas, NumPy, Scikit-learn, XGBoost, NLTK, Feature Engineering, SQL Optimization, Database Design, Stored Procedures</li>
+          <li><b>Tools & DevOps:</b> Git, GitHub, Visual Studio 2022, VS Code, PyCharm, Postman, Swagger, AGILE, PowerPoint, Word, Excel, Wamp Server, Cpanel</li>
+        </ul>
+      </div>
+
+      <!-- Projects -->
+      <div style="margin-bottom: 14px;">
+        <h3 style="margin: 0 0 6px; font-size: 13px; background: #e0e4f0; padding: 3px 6px; color: #000082; border-left: 3px solid #000082;">PROJECTS</h3>
+        
+        <div style="margin-bottom: 10px;">
+          <b>Rafed</b> — <i>Enterprise SaaS for Nonprofit Organizations</i>
+          <p style="margin: 2px 0; font-size: 11px; color: #444;">Developed and maintained a large-scale SaaS ERP platform serving more than 1,500 nonprofit organizations across Saudi Arabia.</p>
+          <ul style="margin: 2px 0 0 18px; padding: 0; font-size: 11px; color: #333; line-height: 1.4;">
+            <li>Contributed to a comprehensive dashboard containing over 900 pages and 30 integrated management modules.</li>
+            <li>Supported beneficiary services, donors, finance, HR, governance, strategic planning, administrative workflows, and organizational operations.</li>
+            <li>Implemented configurable approval workflows, role-based permissions, reporting, and centralized data management.</li>
+            <li>Helped deliver a scalable and customizable solution that enables nonprofit organizations to automate operations and achieve complete digital transformation.</li>
+          </ul>
+        </div>
+
+        <div style="margin-bottom: 10px;">
+          <b>Abwab El-Kheir</b> — <i>Charity & Donation Management Platform</i>
+          <ul style="margin: 2px 0 0 18px; padding: 0; font-size: 11px; color: #333; line-height: 1.4;">
+            <li>Developed a full-stack platform consisting of a public donation website and a comprehensive administration dashboard using React.js and .NET.</li>
+            <li>Built modules for managing campaigns, campaign types, donors, transactions, recurring donations, and fundraising targets.</li>
+            <li>Developed a CMS for managing pages, media, navigation, layouts, branding, sponsors, and website content.</li>
+            <li>Integrated multiple payment gateways with configurable live/test environments and transaction tracking.</li>
+            <li>Implemented analytics, OAuth authentication, CAPTCHA protection, SMTP email notifications, and reusable email templates.</li>
+          </ul>
+          <div style="font-size: 10.5px; color: #666; margin-top: 2px;"><b>Tech Stack:</b> React.js, .NET, REST APIs, OAuth, CAPTCHA, Payment Gateways, SMTP.</div>
+        </div>
+
+        <div style="margin-bottom: 10px;">
+          <b>JobLens – AI-Powered Recruitment Integrity Platform</b> — <i>A+ Graduation Project</i>
+          <p style="margin: 2px 0; font-size: 11px; color: #444;">Co-developed an end-to-end AI recruitment platform automating candidate screening, job matching, interviewing, integrity monitoring, and hiring recommendations.</p>
+          <ul style="margin: 2px 0 0 18px; padding: 0; font-size: 11px; color: #333; line-height: 1.4;">
+            <li>Implemented LLM-powered CV parsing and ATS analysis, providing scores, strengths, weaknesses, and actionable improvement suggestions.</li>
+            <li>Built a semantic job-matching engine using SBERT and ChromaDB, supported by more than 1,700 scraped job listings.</li>
+            <li>Developed an AI interview pipeline using Mistral LLM, Parakeet STT, and Coqui TTS, achieving 95% turn-taking accuracy and a 0.0189 word error rate.</li>
+            <li>Integrated YOLOv8, MediaPipe, and browser monitoring to detect suspicious behavior, achieving 99% mAP50 and 98% precision and recall.</li>
+            <li>Generated comprehensive recruiter reports combining assessment, interview, and integrity scores to rank and shortlist candidates.</li>
+          </ul>
+          <div style="font-size: 10.5px; color: #666; margin-top: 2px;"><b>Tech Stack:</b> Angular, FastAPI, Python, LLMs, RAG, SBERT, ChromaDB, YOLOv8, MediaPipe, PostgreSQL, Docker.</div>
+        </div>
+
+        <div style="margin-bottom: 10px;">
+          <b>Freelance Platform</b> — <i>Ejada Intern Graduation Project</i>
+          <ul style="margin: 2px 0 0 18px; padding: 0; font-size: 11px; color: #333; line-height: 1.4;">
+            <li>Designed and led development of a production-ready freelance marketplace with full collaboration lifecycle: job postings, proposals, contract change requests with versioning, reviews, and real-time notifications.</li>
+            <li>Implemented CQRS + MediatR, Unit of Work, and clean architecture separating API (JWT, REST, SignalR) from MVC (Razor) frontend via typed HttpClient.</li>
+            <li>Built middleware-based exception handling & structured logging with Serilog: enabled diagnostics and request/response tracking.</li>
+            <li>Integrated Cloudinary for secure file uploads, JWT + Cookie authentication for multi-role access, and SignalR hubs for real-time notifications and user presence.</li>
+            <li>Delivered production-quality testing using xUnit, Moq, and FluentAssertions.</li>
+          </ul>
+          <div style="font-size: 10.5px; color: #666; margin-top: 2px;"><b>Tech Stack:</b> .NET 8, ASP.NET Core MVC, Web API, SignalR, EF Core (SQL Server), Serilog, Cloudinary, Bootstrap, jQuery.</div>
+        </div>
+
+        <div style="margin-bottom: 10px;">
+          <b>Elzahy Group</b> — <i>Elzahy Group portfolio</i>
+          <p style="margin: 2px 0; font-size: 11px; color: #333;">Designed and developed the company's full website for a leading construction firm using Angular and ASP.NET Core, implementing dynamic content management, responsive UI, and backend APIs for project showcasing and client inquiries.</p>
+        </div>
+
+        <div style="margin-bottom: 10px;">
+          <b>Airbnb Guest Satisfaction Predictor</b> — <i>Team Lead | 2nd Place in ML Competition</i>
+          <ul style="margin: 2px 0 0 18px; padding: 0; font-size: 11px; color: #333; line-height: 1.4;">
+            <li>Achievement: 2nd place in Machine Learning Competition.</li>
+            <li>Built dual prediction system processing 50K+ Airbnb listings with advanced NLP sentiment analysis.</li>
+            <li>Created interactive dashboard with Streamlit for real-time predictions.</li>
+          </ul>
+          <div style="font-size: 10.5px; color: #666; margin-top: 2px;"><b>Tech Stack:</b> Python, Scikit-learn, XGBoost, NLTK, Streamlit.</div>
+        </div>
+
+        <div style="margin-bottom: 10px;">
+          <b>Elmokhtareon</b> — <i>Freelance Project For Coding Academy</i>
+          <p style="margin: 2px 0; font-size: 11px; color: #333;">Full-stack freelance project for a coding academy with student portal and admin dashboard.</p>
+          <div style="font-size: 10.5px; color: #666; margin-top: 2px;"><b>Tools/Technologies:</b> VS Code, Cursor, Bootstrap, HTML, CSS, JavaScript, jQuery, SweetAlert, Ajax, RESTful Web API, EF Core, LINQ, Swagger, Postman.</div>
+        </div>
+
+        <div style="margin-bottom: 10px;">
+          <b>Caro</b> — <i>MVC Ecommerce Project</i>
+          <p style="margin: 2px 0; font-size: 11px; color: #333;">E-Commerce Project applying ASP.NET MVC and Backend concepts with catalog, cart, and authentication.</p>
+          <div style="font-size: 10.5px; color: #666; margin-top: 2px;"><b>Tools/Technologies:</b> Visual Studio, SQL Server, MySQL, JavaScript, CSS, Bootstrap, C#, ASP.NET MVC, LINQ, EF Core, ASP Identity.</div>
+        </div>
+      </div>
+
+      <!-- Leadership & Activities -->
+      <div style="margin-bottom: 14px;">
+        <h3 style="margin: 0 0 6px; font-size: 13px; background: #e0e4f0; padding: 3px 6px; color: #000082; border-left: 3px solid #000082;">LEADERSHIP & ACTIVITIES</h3>
+        
+        <div style="margin-bottom: 8px;">
+          <b>Neural Network & Sentiment Analysis Competition</b>
+          <ul style="margin: 2px 0 0 18px; padding: 0; font-size: 11px; color: #333; line-height: 1.4;">
+            <li>Secured 1st Place on the Public Leaderboard and 3rd Place on the Private Leaderboard.</li>
+            <li>Developed a robust ensemble model combining DeBERTa V3 Large, BiLSTM, and CNN to handle highly imbalanced ordinal sentiment data.</li>
+            <li>Applied Layer-wise Learning Rate Decay (LLRD) and a custom Combined Ordinal Focal Loss to improve hard-example learning while preserving class ordering.</li>
+          </ul>
+        </div>
+
+        <div style="margin-bottom: 8px;">
+          <b>ECPC Competitor</b>
+          <p style="margin: 2px 0; font-size: 11px; color: #333;">Achieved the 13th place on Ain Shams University and the fifty-fourth place over 260 teams from ASU and Cairo University.</p>
+        </div>
+
+        <div style="margin-bottom: 8px;">
+          <b>ACMASCIS Member</b>
+          <p style="margin: 2px 0; font-size: 11px; color: #333;">Codeforces Specialist rating with expertise in algorithms, data structures, DP, graph theory.</p>
+        </div>
+
+        <div style="margin-bottom: 8px;">
+          <b>Web Development Workshop Organizer</b> — <i>Faculty of Computer Science, Ain Shams University</i>
+          <p style="margin: 2px 0; font-size: 11px; color: #333;">Designed and led advanced workshops on SASS, ES6, jQuery, and Bootstrap for 50+ students.</p>
+        </div>
+
+        <div style="margin-bottom: 8px;">
+          <b>Head of Web Development</b> — <i>Faculty of Computer Science, Ain Shams University</i>
+          <p style="margin: 2px 0; font-size: 11px; color: #333;">Leading team of 20 members delivering web development education to 50+ students. Curriculum design: Level 1 (React), Level 2 (ASP.NET).</p>
+        </div>
+
+        <div style="margin-bottom: 8px;">
+          <b>Ain Shams University Machine Learning Competition</b>
+          <ul style="margin: 2px 0 0 18px; padding: 0; font-size: 11px; color: #333; line-height: 1.4;">
+            <li>Secured 2nd Place by developing a dual regression and classification system for predicting Airbnb guest satisfaction.</li>
+            <li>Applied advanced feature engineering, KMeans clustering, VADER and TF-IDF text analysis, SMOTE, and multiple encoding techniques while evaluating 15 machine learning algorithms.</li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="statusbar">
-      <span class="cell grow">Mohamed_Oraby_CV.pdf (Ready to print)</span>
+      <span class="cell grow">Mohamed_Oraby_CV.pdf (Official 3-Page CV Verified)</span>
       <span class="cell">100%</span>
     </div>`;
 }
@@ -1244,7 +1587,8 @@ function wireWindow(key, win) {
         btn.classList.add('active');
         const filter = btn.dataset.filter;
         win.querySelectorAll('.project-card-98').forEach(card => {
-          if (filter === 'all' || card.dataset.category === filter) {
+          const cats = (card.dataset.category || '').split(' ');
+          if (filter === 'all' || cats.includes(filter)) {
             card.style.display = 'block';
           } else {
             card.style.display = 'none';
@@ -1505,44 +1849,55 @@ function initTerminal(win) {
   exit       - Close terminal window`,
 
     about: `MOHAMED KHALID ORABY
-Junior Full-stack Developer & CS Student at Ain Shams University
-GPA: 3.7 / 4.0 (Class of 2026)
-.NET Engineer Intern @ Ejada Company
-DEMI Coding Instructor @ iSchool`,
+Software & AI Engineer
+Ain Shams University, Faculty of Computer Science (Class of 2026, GPA: 3.7 / 4.0)
+Software Engineer @ Prismatecs Smart Solutions
+Coding Instructor @ EYOUTH & iSchool (2,000+ learners)
+Freelancing Coach @ Career 180, DEPI Program
+Full Stack .NET & Angular Engineer @ Hive Solutions Company
+.NET Engineer Intern @ Ejada Company`,
 
     skills: `CORE TECHNICAL STACK:
-  Backend  : C#, .NET 8, ASP.NET Core, EF Core, RESTful APIs, SignalR, Microservices, Python, Java
-  Frontend : JavaScript (ES6+), React, TypeScript, HTML5/CSS3, Bootstrap, jQuery
-  Database : SQL Server (T-SQL), MySQL
-  Data/ML  : Pandas, NumPy, Scikit-learn, XGBoost, NLP
-  DevOps   : Git, GitHub, Visual Studio, VS Code, Postman, Swagger, Agile`,
+  Backend  : C#, .NET 8, ASP.NET Core, ASP.NET MVC, EF Core, PHP, Python, RESTful Web APIs, JWT, Microservices, SignalR, NodeJS, Java
+  Frontend : Angular, React, NextJS, TypeScript, JavaScript (ES6+), HTML5/CSS3/SASS, Bootstrap, RxJS, NgRx, Redux, GSAP, ThreeJS
+  AI & ML  : Agentic AI, LLMs, RAG, Prompt Engineering, Computer Vision (YOLOv8, MediaPipe), NLP (SBERT, DeBERTa), Deep Learning
+  Database : SQL Server (Optimization, Stored Procs), PostgreSQL, ChromaDB (Vector DB), MySQL, MongoDB, Pandas, NumPy, Scikit-learn
+  DevOps   : Git, GitHub, Docker, Visual Studio 2022, VS Code, PyCharm, Postman, Swagger, AGILE, Wamp Server, Cpanel`,
 
     projects: `PORTFOLIO HIGHLIGHTS:
-  1. Freelance Job Board (.NET 8, CQRS, SignalR, SQL Server)
-  2. Airbnb Guest Satisfaction ML (Python, Scikit-learn, Streamlit)
-  3. AIC2 AinEl3aql AI Platform (Deep Learning & Ensembles, 68% Acc)
-  4. Elmokhtareon Coding Academy (ASP.NET MVC, EF Core)
-  5. Caro E-Commerce Platform (ASP.NET MVC, Payment Gateway)
-  6. VoidX NASA Project (ASP.NET Core, NASA Exoplanet APIs)
-  7. Map Routing Algorithm (C#, Dijkstra Algorithm)
-  8. FOS Operating System (C, Memory Paging & Scheduling)`,
+  1. Rafed (Enterprise SaaS ERP, 1,500+ Nonprofits, 900+ Pages, 30 Modules)
+  2. Abwab El-Kheir (Charity & Donation Management Platform, React.js & .NET)
+  3. JobLens (A+ AI Recruitment Platform, Mistral LLM, RAG, YOLOv8 99% mAP50)
+  4. Freelance Platform (Ejada Intern Graduation Project, .NET 8, CQRS, SignalR)
+  5. Elzahy Group (Construction Firm Full Website, Angular & ASP.NET Core)
+  6. Airbnb Guest Satisfaction ML (Python, Scikit-learn, XGBoost, Streamlit)
+  7. Elmokhtareon (Full-Stack Coding Academy Platform, ASP.NET MVC, EF Core)
+  8. Caro (MVC E-Commerce Platform, ASP.NET MVC, EF Core, ASP Identity)
+  9. VoidX NASA Project (ASP.NET Core, NASA Exoplanet APIs)
+  10. Map Routing Algorithm (C#, Dijkstra Graph Theory)
+  11. FOS Operating System (C, Memory Paging & CPU Scheduling)`,
 
     contact: `GET IN TOUCH:
   Email    : mohamed.khalid.gamal@gmail.com
-  Phone    : +201208473203
+  Phone    : +201211099674
   LinkedIn : https://linkedin.com/in/mohamed-khalid-gamal
   GitHub   : https://github.com/mohamed-khalid-gamal
   Location : Cairo, Egypt`,
 
-    experience: `EXPERIENCE:
-  - .NET Engineer Intern @ Ejada Company (July 2025 - Sept 2025)
-  - DEMI Coding Instructor @ iSchool (Oct 2024 - Present)
-  - Ain Shams University B.Sc. Computer Science (2022 - 2026, GPA 3.7)`,
+    experience: `PROFESSIONAL EXPERIENCE:
+  - Software Engineer @ Prismatecs Smart Solutions (11/2025 - Present)
+  - Coding Instructor @ EYOUTH (04/2026 - Present)
+  - Freelancing Coach @ Career 180, DEPI Program (09/2025 - Present)
+  - Full Stack .NET & Angular Engineer @ Hive Solutions (09/2025 - 2026)
+  - .NET Engineer Intern @ Ejada Company (07/2025 - 09/2025)
+  - DEMI Coding Instructor @ iSchool (10/2024 - 07/2025)
+  - Ain Shams University B.Sc. Computer Science (07/2022 - 05/2026, GPA 3.7)`,
 
-    achieve: `AWARDS:
-  - 10th Place AIC2 Competition (68% accuracy)
-  - 2nd Place ASU Machine Learning Competition (Team Lead)
-  - Codeforces Specialist rating in competitive programming`,
+    achieve: `AWARDS & COMPETITIONS:
+  - 1st Place Public / 3rd Private: Neural Network & Sentiment Analysis Competition
+  - 2nd Place: ASU Machine Learning Competition (Team Lead, Airbnb Satisfaction)
+  - ECPC Competitor: 13th ASU, 54th / 260+ teams
+  - Codeforces Specialist rating in competitive programming (ACMASCIS)`,
 
     date: () => new Date().toString()
   };
