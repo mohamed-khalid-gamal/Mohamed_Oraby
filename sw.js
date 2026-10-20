@@ -11,11 +11,12 @@ const PRECACHE_ASSETS = [
   './styles.css',
   './script.js',
   './manifest.json',
+  './favicon.ico',
   './favicon.png',
   './apple-touch-icon.png',
   './icon-192.png',
   './icon-512.png',
-  './public/mo Oraby (1).png',
+  './mo Oraby (1).png',
   'https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap'
 ];
 
@@ -25,11 +26,15 @@ const PRECACHE_ASSETS = [
 self.addEventListener('install', event => {
   self.skipWaiting();
   event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => {
+    caches.open(CACHE_NAME).then(async cache => {
       console.log('[SW] Pre-caching offline assets...');
-      return cache.addAll(PRECACHE_ASSETS).catch(err => {
-        console.warn('[SW] Some assets failed to precache during install:', err);
-      });
+      await Promise.allSettled(
+        PRECACHE_ASSETS.map(asset =>
+          cache.add(asset).catch(err => {
+            console.warn('[SW] Could not precache asset:', asset, err);
+          })
+        )
+      );
     })
   );
 });

@@ -12,8 +12,18 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Oraby 98">
   <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- SVG class name safeguard for browser extensions -->
+  <script>
+    if (typeof SVGAnimatedString !== 'undefined' && !SVGAnimatedString.prototype.indexOf) {
+      SVGAnimatedString.prototype.indexOf = function(searchString, position) {
+        return (this.baseVal || '').indexOf(searchString, position);
+      };
+    }
+  </script>
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Mohamed Oraby 98">
   <meta property="og:title" content="Mohamed Oraby - Junior Full-stack Developer">
