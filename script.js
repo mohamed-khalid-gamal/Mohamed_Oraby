@@ -31,7 +31,10 @@ const ICON = {
   mail: `<svg viewBox="0 0 24 24" fill="#c0392b"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.89 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>`,
   phone: `<svg viewBox="0 0 24 24" fill="#27ae60"><path d="M6.62,10.79C8.06,13.62 10.38,15.93 13.21,17.38L15.41,15.18C15.69,14.9 16.03,14.8 16.34,14.89C18.23,15.45 20.01,15.02 21.34,13.71C22.37,12.7 22.85,11.33 22.73,10.05C22.53,8.09 21.45,6.39 19.77,5.1C18.77,4.35 17.62,3.84 16.42,3.57L14.22,5.77C14.13,6.08 14.23,6.42 14.51,6.7C17.38,9.57 17.38,14.24 14.51,17.11L12,14.6C12,14.6 15.54,11.05 15.5,11.02C15.15,10.67 14.66,10.53 14.23,10.7C13.51,10.99 12.91,11.57 12.59,12.28L10.71,14.17C9.41,11.47 7.04,9.1 4.34,7.8L6.23,5.92C6.94,5.6 7.52,5 8.01,4.29C9.32,2.61 11.02,1.53 13.07,1.33C14.35,1.21 15.72,1.69 16.73,2.72C18.04,4.05 18.51,5.83 18.07,7.72C17.98,8.03 18.08,8.37 18.36,8.65L20.56,10.85C20.65,10.94 20.75,11.02 20.84,11.1C19.55,11.45 18.37,12.03 17.34,12.81L14.33,9.8C14.6,9.52 14.7,9.17 14.61,8.86C14.33,8.02 13.75,7.29 13,6.79L10.21,9.58C10.71,10.3 11.44,10.88 12.28,11.16C12.56,11.25 12.9,11.15 13.18,10.87L16.19,13.88C15.41,14.91 14.39,15.7 13.15,16.05C13.07,16.07 13,16.08 12.92,16.08C11.95,16.08 10.98,15.67 10.26,14.95L7.25,11.94C6.97,11.66 6.52,11.56 6.24,11.75C5.2,12.43 4.3,13.33 3.59,14.37C2.38,16.06 1.84,18.1 2.1,20.18C2.28,21.61 2.88,22.94 3.82,24C4.86,25.15 6.2,25.76 7.59,25.76C8.69,25.76 9.77,25.42 10.67,24.81C11.76,24.07 12.66,23.07 13.29,21.9C13.57,21.38 13.47,20.74 13.03,20.3L10.79,18.06C10.68,17.95 10.54,17.88 10.4,17.85C9.41,17.65 8.47,17.16 7.69,16.43L10.79,13.33C11.07,13.61 11.43,13.71 11.74,13.62C13.39,13.1 14.9,12.23 16.15,11.07L18.35,13.27C18.63,13.55 19.08,13.66 19.49,13.56C20.83,13.24 22.05,12.5 23,11.41C24.05,10.21 24.64,8.69 24.64,7.14C24.64,5.59 24.05,4.07 23,2.87C21.91,1.68 20.4,0.89 18.77,0.7C17.74,0.59 16.72,0.76 15.77,1.2C14.6,1.74 13.53,2.5 12.61,3.42L10.41,1.22C10.13,0.94 9.78,0.84 9.47,0.93C6.64,1.8 4.33,4.12 2.88,6.95L6.62,10.79Z"/></svg>`,
   ext: `<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>`,
-  code: `<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>`
+  code: `<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>`,
+  install: `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>`,
+  netOnline: `<svg viewBox="0 0 24 24" width="14" height="14"><rect x="2" y="4" width="9" height="7" rx="1" fill="#27ae60"/><rect x="13" y="13" width="9" height="7" rx="1" fill="#27ae60"/><line x1="6" y1="11" x2="6" y2="15" stroke="#000" stroke-width="1.5"/><line x1="6" y1="15" x2="17" y2="15" stroke="#000" stroke-width="1.5"/><line x1="17" y1="15" x2="17" y2="13" stroke="#000" stroke-width="1.5"/></svg>`,
+  netOffline: `<svg viewBox="0 0 24 24" width="14" height="14"><rect x="2" y="4" width="9" height="7" rx="1" fill="#7f8c8d"/><rect x="13" y="13" width="9" height="7" rx="1" fill="#7f8c8d"/><line x1="2" y1="2" x2="22" y2="22" stroke="#e74c3c" stroke-width="2.2"/></svg>`
 };
 
 /* =====================================================================
@@ -551,7 +554,7 @@ function homeBodyHTML() {
           <div class="home-hero-text">
             <h2 class="home-hero-title">MOHAMED ORABY</h2>
             <p class="home-hero-subtitle">Junior Full-stack Developer & CS Student</p>
-            <span class="home-hero-badge">Ain Shams University '26 • GPA 3.7 • .NET Intern @ Ejada</span>
+            <span class="home-hero-badge">Ain Shams University '26 • GPA 3.7 • .NET Intern @ Ejada • PWA Offline Ready</span>
           </div>
         </div>
       </div>
@@ -623,6 +626,9 @@ function homeBodyHTML() {
           </a>
           <button class="social-btn" data-open="resume" title="View Resume">
             ${ICON.resume}
+          </button>
+          <button class="social-btn" id="home-install-pwa-btn" title="Install App to Desktop / Home Screen (PWA)">
+            ${ICON.install}
           </button>
         </div>
       </div>
@@ -1633,12 +1639,14 @@ function buildStartMenu() {
     { key: 'cmd', label: 'MS-DOS Prompt', icon: ICON.cmd },
     { key: 'minesweeper', label: 'Play Minesweeper', icon: ICON.minesweeper },
     { key: 'readme', label: 'About_Mohamed.txt', icon: ICON.txt },
+    { install: true, label: 'Install Oraby 98 App...', icon: ICON.install },
     { shutdown: true, label: 'Shut Down...', icon: ICON.pc }
   ];
 
   startList.innerHTML = items.map(i => {
     if (i.sep) return '<div class="sm-sep"></div>';
     if (i.link) return `<div class="sm-item" data-link="${i.link}"><span class="ico">${i.icon}</span>${i.label}</div>`;
+    if (i.install) return `<div class="sm-item" data-install="1"><span class="ico">${i.icon}</span>${i.label}</div>`;
     if (i.shutdown) return `<div class="sm-item" data-shutdown="1"><span class="ico">${i.icon}</span>${i.label}</div>`;
     return `<div class="sm-item" data-open="${i.key}"><span class="ico">${i.icon}</span>${i.label}</div>`;
   }).join('');
@@ -1650,6 +1658,9 @@ function buildStartMenu() {
       else if (el.dataset.link) {
         Audio98.click();
         window.open(el.dataset.link, '_blank', 'noopener');
+      } else if (el.dataset.install) {
+        Audio98.click();
+        promptInstallPWA();
       } else if (el.dataset.shutdown) {
         doShutdown();
       }
@@ -1732,10 +1743,131 @@ muteBtn.addEventListener('click', () => {
 });
 
 /* =====================================================================
+   PWA & OFFLINE ENGINE
+   ===================================================================== */
+let deferredPrompt = null;
+const pwaInstallBtn = $('#pwa-install-btn');
+const netStatusEl = $('#net-status');
+const trayBalloon = $('#tray-balloon');
+const balloonBody = $('#balloon-body');
+const balloonClose = $('#balloon-close');
+let balloonTimer = null;
+
+function showBalloonTip(title, text, duration = 6000) {
+  if (!trayBalloon || !balloonBody) return;
+  const titleEl = trayBalloon.querySelector('.balloon-title');
+  if (titleEl) titleEl.textContent = title;
+  balloonBody.textContent = text;
+  trayBalloon.style.display = 'block';
+  Audio98.open();
+
+  if (balloonTimer) clearTimeout(balloonTimer);
+  if (duration > 0) {
+    balloonTimer = setTimeout(() => {
+      trayBalloon.style.display = 'none';
+    }, duration);
+  }
+}
+
+if (balloonClose) {
+  balloonClose.addEventListener('click', () => {
+    if (trayBalloon) trayBalloon.style.display = 'none';
+    if (balloonTimer) clearTimeout(balloonTimer);
+  });
+}
+
+function updateNetworkStatus() {
+  const isOnline = navigator.onLine;
+  if (netStatusEl) {
+    netStatusEl.innerHTML = isOnline ? ICON.netOnline : ICON.netOffline;
+    netStatusEl.title = isOnline ? 'Network: Online' : 'Network: Offline (Running in Local Mode)';
+    netStatusEl.classList.toggle('offline', !isOnline);
+  }
+}
+
+window.addEventListener('online', () => {
+  updateNetworkStatus();
+  showBalloonTip('Network Connection', 'Connection restored! Live external links and APIs available.', 5000);
+});
+
+window.addEventListener('offline', () => {
+  updateNetworkStatus();
+  showBalloonTip('Offline Mode Active', 'Operating System running offline. All cached portfolio apps and projects are fully accessible.', 6000);
+});
+
+function promptInstallPWA() {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then(choiceResult => {
+      if (choiceResult.outcome === 'accepted') {
+        showBalloonTip('Installation', 'Mohamed Oraby 98 is installing on your device!', 4000);
+      }
+      deferredPrompt = null;
+      if (pwaInstallBtn) pwaInstallBtn.classList.remove('ready');
+    });
+  } else {
+    showBalloonTip('App Installation', 'To install this portfolio as a standalone app, use your browser menu ("Install App" or "Add to Home Screen").', 6000);
+  }
+}
+
+function initPWA() {
+  updateNetworkStatus();
+
+  // Register Service Worker
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js')
+        .then(reg => {
+          console.log('[PWA] Service Worker registered in scope:', reg.scope);
+        })
+        .catch(err => {
+          console.warn('[PWA] Service Worker registration failed:', err);
+        });
+    });
+  }
+
+  // Handle BeforeInstallPrompt
+  window.addEventListener('beforeinstallprompt', e => {
+    e.preventDefault();
+    deferredPrompt = e;
+    if (pwaInstallBtn) {
+      pwaInstallBtn.classList.add('ready');
+    }
+    setTimeout(() => {
+      if (desktop && desktop.classList.contains('show')) {
+        showBalloonTip('Install Oraby 98', 'Click "Install" in the taskbar tray to add this OS directly to your home screen or desktop.', 7000);
+      }
+    }, 3500);
+  });
+
+  if (pwaInstallBtn) {
+    pwaInstallBtn.addEventListener('click', () => {
+      Audio98.click();
+      promptInstallPWA();
+    });
+  }
+
+  window.addEventListener('appinstalled', () => {
+    deferredPrompt = null;
+    if (pwaInstallBtn) pwaInstallBtn.classList.remove('ready');
+    showBalloonTip('Installation Complete', 'Mohamed Oraby 98 has been installed successfully. You can launch it anytime offline!', 6000);
+  });
+
+  // Delegated click for in-window install buttons
+  document.addEventListener('click', e => {
+    if (e.target.closest('#home-install-pwa-btn')) {
+      Audio98.click();
+      promptInstallPWA();
+    }
+  });
+}
+
+/* =====================================================================
    INITIALIZATION
    ===================================================================== */
 buildDesktopIcons();
 buildStartMenu();
+initPWA();
 $('#start-flag').innerHTML = ICON.flag;
 
 function openFromHash() {

@@ -1,0 +1,80 @@
+{
+  "name": "Mohamed Oraby - Retro 98 OS",
+  "short_name": "Oraby 98",
+  "description": "Retro Windows 98 Desktop Portfolio of Mohamed Khalid Oraby - Junior Full-Stack Developer & CS Student",
+  "start_url": "./",
+  "id": "/oraby98-portfolio-pwa",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "browser"],
+  "background_color": "#0a8a8a",
+  "theme_color": "#0a8a8a",
+  "orientation": "any",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["portfolio", "developer", "productivity"],
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "64x64",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Featured Projects",
+      "short_name": "Projects",
+      "url": "./#projects",
+      "description": "View software engineering projects"
+    },
+    {
+      "name": "Experience & Career",
+      "short_name": "Experience",
+      "url": "./#experience",
+      "description": "View professional background and education"
+    },
+    {
+      "name": "Technical Skills",
+      "short_name": "Skills",
+      "url": "./#skills",
+      "description": "Explore technical stack & skill progress"
+    },
+    {
+      "name": "Contact Mohamed",
+      "short_name": "Contact",
+      "url": "./#contact",
+      "description": "Get in touch with Mohamed Oraby"
+    }
+  ]
+}

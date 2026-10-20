@@ -1568,6 +1568,84 @@ textarea.input98 {
   color: #000000;
 }
 
+#pwa-install-btn {
+  display: none;
+  background: var(--silver);
+  box-shadow: inset -1px -1px var(--sh-dk), inset 1px 1px var(--hi);
+  padding: 1px 4px;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#pwa-install-btn.ready {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+#net-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+}
+
+/* Windows 98 System Tray Balloon Tip */
+.tray-balloon {
+  position: absolute;
+  right: 10px;
+  bottom: 34px;
+  z-index: 600;
+  width: 220px;
+  background: #ffffdf;
+  border: 1px solid #000000;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.45);
+  padding: 6px 8px;
+  display: none;
+  font-size: 11px;
+  line-height: 1.35;
+  color: #000000;
+  border-radius: 3px;
+  animation: balloonPop 0.2s ease-out;
+}
+
+.tray-balloon::after {
+  content: "";
+  position: absolute;
+  right: 28px;
+  bottom: -6px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #000000;
+}
+
+@keyframes balloonPop {
+  from { transform: translateY(6px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.balloon-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 11.5px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #d4d4b8;
+  padding-bottom: 2px;
+}
+
+.balloon-close {
+  background: none;
+  border: none;
+  font-size: 10px;
+  cursor: pointer;
+  padding: 0 2px;
+  font-weight: bold;
+}
+
 .tray-icon-btn svg {
   width: 16px;
   height: 16px;
